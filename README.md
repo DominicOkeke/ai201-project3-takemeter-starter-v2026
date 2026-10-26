@@ -42,8 +42,10 @@
 <!-- Your community, and what your classifier sorts posts into. Three or four
      sentences. -->
 
+This project builds TakeMeter, a text classifier trained to categorize discussions from the hardware community on Reddit (r/hardware). It sorts community posts and comments into distinct structural types—specifically distinguishing between factual technical analysis, unsupported hot_take claims, and quick reaction remarks. By automating this sorting process, the classifier helps filter through community noise to surface substantive architectural debates and hardware insights.
 
-
+## Data Source
+- **Source Thread:** [Is the future of hardware just optimization? on r/hardware](https://www.reddit.com/r/hardware/comments/1pwxwx7/is_the_future_of_hardware_just_optimization/)
 ---
 
 ## Label Taxonomy
@@ -54,37 +56,127 @@
      The decision rule is worth a point on its own and it's the thing most
      people leave out. Every taxonomy has a hardest boundary. Name yours. -->
 
-### `label_one`
+### `label_one`: Analysis
 
 **Definition:**
+ Makes an argument backed by a specific, checkable fact (such as an IRDS roadmap, transistor gate metrics, or manufacturing process nodes)
 
 **Example 1:**
->
+>"You can look up IRDS's most recent More Moore roadmap if you're curious. There are significant improvements in compute and efficiency yet to come from CMOS..."
 
 **Example 2:**
->
+>"As the industry moves to GAA-FETs, backside power delivery, and High NA-EUV, the low hanging fruit will be picked..."
 
-### `label_two`
+### `label_two`: hot_take
 
 **Definition:**
+A confident, broad claim or sweeping prediction with no technical support or architectural data offered.
 
 **Example 1:**
->
+>"In 10 years we will be right here. 10 years ago was 2015. Internet is the same, phones are the same, PCs and servers are the same."
 
 **Example 2:**
->
+>"The future of hardware just optimization? ... Barring the switch to quantum or light based computers I think most improvements to the computer world are going to come from optimisations."
+
+
+### `label_three`: Reactions
+
+**Definition:** An immediate emotional response, personal anecdote, or brief conversational reply rather than a structured technical argument.
+
+**Example 1:** 
+> "Very interesting 🤔".
+
+**Example 2:** 
+> "Yeah. In 2005 if you had 4GB of RAM you were cool."
+
+---
 
 ### The hardest boundary
 
 **Which two labels:**
+Analysis vs. Hot_take
 
 **The decision rule I used every time:**
 <!-- e.g. "If the post names a specific checkable fact, it's `analysis`, even
      if the tone is heated." -->
 
+ If a post makes a predictive claim about future hardware limits or slowdowns but accompanies it with specific engineering terms, architectural paradigms (e.g., GAA-FETs, CNTFETs), or explicit roadmap references, it is **`analysis`**. If it states the same prediction purely as an opinion or personal belief without referencing underlying physical or industrial data points, it is a **`hot_take`**.
 
+ If the post names a specific checkable architectural metric or hardware specification (such as core counts, VRAM capacity, or bus widths), it is **`analysis`**, even if the tone is cynical or heated.
 
 ---
+
+## Borderline Case Analysis
+The Two Labels Involved: analysis and hot_take
+
+## The Borderline Post Example:
+
+"Nvidia could have sold us a 5080 that had 50% more cores, 50% more VRAM at the same price, and made a healthy margin besides.. they didn't, bc they don't have to."
+
+Why it's ambiguous: It reads like an opinionated, cynical rant about corporate greed (which leans toward a hot_take), but it relies on specific, quantifiable hardware metrics and product specifications (50% more cores, 50% more VRAM) to drive its point home.
+
+## Your Decision Rule
+If the post names a specific checkable architectural metric or hardware specification (such as core counts, VRAM capacity, or bus widths), it is analysis, even if the tone is cynical or heated.
+
+## How I Updated the Decision Rule
+
+## Stress Test: Analysis vs. Hot_take
+
+I selected eight real comments from the r/hardware thread ("Is the future of hardware just optimization?") that sit near the analysis/hot_take boundary and labeled each one under my original rule, then under a tightened rule.
+
+### The eight boundary comments
+
+| # | Commenter | Excerpt | Original rule | Problem found | Final label |
+|---|---|---|---|---|---|
+| 1 | greggm2000 | "Nvidia could have sold us a 5080 that had 50% more cores, 50% more VRAM..." | analysis | Figures are counterfactual. Right label, wrong reason. | analysis (thin) |
+| 2 | reddit_equals_censor | 3060 vs. 4060 die sizes, bus widths, prices | analysis | None. Heated tone doesn't matter. | analysis |
+| 3 | dudemanguy301 | "tail end of the useful lifespan of regular EUV, front side power delivery, and Fin-FETs" | analysis | Excerpt alone is jargon plus a prediction. | analysis |
+| 4 | lord_lableigh | "You can lookup the IEEE conference on chip roadmap..." | analysis | None, but thin. | analysis (thin) |
+| 5 | Federal_Patience2422 | "Tsmc itself states that it's keeping track with moores law" | hot_take | Appeal to a source with no locatable document. | hot_take |
+| 6 | [deleted] | "25% improvement in 20 years... flat from N4 to N3" | ambiguous | Specific but unsourced figures; no ruling existed. | analysis (thin) |
+| 7 | noiserr | "ARM is efficient at light workloads... x86 is more efficient at heavy workloads" | conflict | Engineering-paradigm trigger said analysis, no-data trigger said hot_take. | hot_take |
+| 8 | Fr0stCy | "SRAM doesn't shrink nearly as much as logic... Apple's unified memory and AMD's X3D cache" | analysis | None. | analysis |
+
+Four of eight (#1, 5, 6, 7) did not classify cleanly under the original rule.
+
+### What the test exposed
+
+1. **Unit of labeling was undefined** (#1, 3). Comments mix claims, so the label must come from the whole comment's main claim.
+2. **The two analysis triggers disagreed** (#3, 7). Engineering terms and checkable metrics gave different answers, and terms alone are cheap.
+3. **Source attribution was inconsistent** (#4 vs. 5). "Look up the IEEE roadmap" counted, but "TSMC states..." did not, and the rule couldn't say why.
+4. **Unsourced numbers had no ruling** (#6).
+5. **hot_take required a "sweeping prediction"** (#7). A confident technical claim with no data and no prediction fit neither label.
+6. **The borderline example was anchored on the wrong sentence** (#1). The 5080 line is a hypothetical.
+
+### Updated decision rule
+
+**Label the whole comment by its main claim.** Tone, hedging, whether the claim is true, and whether the conclusion overreaches never change the label.
+
+- **`analysis`:** The main claim rests on at least one checkable specific that bears on the conclusion: a locatable document or roadmap (IMEC, IRDS, IEEE), a number or date, a named product or component spec, or a documented fact about how a named technology scales or changes.
+- **`hot_take`:** A confident claim, predictive or not, whose support is absent, generic, hypothetical, or attributed to a source no one could locate.
+
+**Does not count as support:**
+- Jargon lists with no claim attached (GAA-FET, CNTFET)
+- General mechanisms ("quantum effects get weird")
+- Numbers inside hypotheticals or counterfactuals
+- Unlocatable attributions ("TSMC says...")
+
+**Thin analysis is still analysis.**
+
+### Revised borderline example
+
+> "Nvidia could have sold us a 5080 that had 50% more cores, 50% more VRAM at the same price, and made a healthy margin besides.. they didn't, bc they don't have to."
+
+The 5080 sentence alone is a counterfactual and would be `hot_take`. The full comment is `analysis` because it also makes checkable GPU-generation comparisons (1080 Ti → 3080 → 4090, 9800X3D vs. 1600X). The label comes from those claims, not from the core and VRAM figures.
+
+### Remaining judgment call
+
+#4 (counts) vs. #5 (doesn't): a locatable roadmap series counts, but a named entity "stating" something does not. If this is ever relaxed so "named entity states X" counts as analysis, flip #5 and apply it everywhere.
+
+### Taxonomy fixes carried forward
+
+- **Analysis Example 2:** use the full dudemanguy301 comment, since the excerpt alone fails the new rule.
+- **Hot_take Example 2:** the "Barring the switch to quantum..." quote is from the original post, not a comment. Decide whether the OP post is in the 200+ items.
 
 ## The Dataset
 
