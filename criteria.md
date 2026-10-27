@@ -53,61 +53,41 @@ whether you hit them:
 
 ## 1.
 
-<!-- Your criterion. It must name a number. -->
+**Accuracy beats a simple checklist by at least 10 points.** Before training, I write a 10-minute rule-of-thumb checklist (a number, year or product name means `analysis`; a question or very short comment means `reaction`; everything else is `hot_take`) and score it on the same held-out set. TakeMeter's accuracy must be at least 0.10 higher than the checklist's, on all three seeds.
 
-
-
-**Why this target:**
-
-
+**Why this target:** My labels hinge on checkable specifics, so a keyword checklist is a real competitor. If a few lines of rules land within 10 points of the model, it isn't worth building. A checklist should stumble on my hard cases (numbers inside hypotheticals, jargon with no claim), which is where the model has to earn its gap.
 
 ---
 
 ## 2.
 
-<!-- Your criterion. -->
+**When TakeMeter says `analysis`, it is right at least 75% of the time (precision ≥ 0.75), and it finds at least 60% of the real `analysis` comments (recall ≥ 0.60), on all three seeds.**
 
-
-
-**Why this target:**
-
-
+**Why this target:** Calling an opinion "evidence-backed" misleads a reader more than missing a good comment, so precision is held higher than recall. Recall is looser because `analysis` is my smallest label (65 of 292), so only about 13 land in a test split and its score will jump between seeds.
 
 ---
 
 ## 3.
 
-<!-- Your criterion. -->
+**It works on a thread it has never seen.** Train on r/hardware and test on r/AskReddit, then the reverse. Accuracy must be at least 0.60 in both directions and no more than 10 points below its normal held-out accuracy.
 
-
-
-**Why this target:**
-
-
+**Why this target:** This checks that it learned what `analysis` looks like and not one forum's habits (r/hardware is technical; r/AskReddit is mostly short predictions). Each thread has few `analysis` examples (47 and 18), so this is a rough warning sign, not a precise score. Always guessing `hot_take` scores 0.55 on r/AskReddit, so 0.60 there is a floor, not a stretch.
 
 ---
 
 ## 4.
 
-<!-- Your criterion. -->
+**I agree with myself.** When I relabel 40 random comments at least 3 days later without looking at my old labels, I give the same label on at least 34 of 40 (0.85), and Cohen's kappa is at least 0.70 (agreement after removing lucky matches). Stretch goal: a classmate using only my written decision rule agrees with me on at least 75% of the same 40.
 
-
-
-**Why this target:**
-
-
+**Why this target:** If I can't label the same comments the same way twice, I can't expect a model to. 21 of my 292 labels are flagged borderline, mostly `analysis` vs `hot_take`, so I expect most disagreements there. If I score under 0.85, I tighten the rule and relabel before judging the model.
 
 ---
 
 ## 5.
 
-<!-- Your criterion. -->
+**When TakeMeter is at least 80% sure, it is right at least 85% of the time, and it is that sure on at least 25% of comments.** Below 50% sure, it shows "uncertain" instead of a label. Measured on predictions pooled across the three seeds.
 
-
-
-**Why this target:**
-
-
+**Why this target:** A confident answer should beat the average, and 85 is deliberately above 80 so that "80% sure" means something. The 25% coverage rule stops it passing by being confident only on easy cases like short `reaction` comments (95 of my 292). Predictions are pooled because a single test split leaves only about 15 comments in the top-confidence group.
 
 ---
 
