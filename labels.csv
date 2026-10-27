@@ -1,0 +1,492 @@
+text,label,note
+"You can look up IRDS's most recent More Moore roadmap if you're curious. There are significant improvements in compute and efficiency yet to come from CMOS, albeit at a slower pace. Economies of scale, learning by doing, and additional competition will also be important to make high-end nodes much cheaper than they are now.
+Meanwhile, hardware manufacturers are now having to take risks they haven't in decades to advance the industry, so who knows when the beyond-CMOS paradigm will arrive.",analysis,pre-labelled
+"Hey, thanks for the pointer. Is that the one from 2022? Titled More Moore?",reaction,pre-labelled
+"The one from 2024 has been published already, IIRC.
+A possible dark horse would be viable CNTFETs, which have far higher electron speeds and a lower Vdd than silicon or 2D materials. Not only could they run at hundreds of GHz for the same power consumption, but they also seem a match made in heaven for ternary logic.
+As far as I know, the groundwork for 99.9999...% pure semiconducting CNT and laying them symmetrically on a wafer have been achieved in lab settings already, but who knows how long it'll take to get them to commercial viability.",analysis,pre-labelled
+Very interesting 🤔,reaction,pre-labelled
+"We are at the tail end of the useful lifespan of regular EUV, front side power delivery, and Fin-FETs. Things suck again just like they did at the tail end of DUV and Planar transitors (anyone else get sick of 28nm? I sure did)
+As the industry moves to GAA-FETs, backside power delivery, and High NA-EUV. The low hanging fruit will be picked and node progress will look pretty decent again for a while until these too become long in the tooth. Next will be CFETs with a darkhorse potential for TFETs.
+That’s before even touching on the current trend of disaggregation, 3D stacking, specialized accelerators, or alternatives to silicon as a material. Also TSMC process node names end in N not nm, this is becuase they aren’t measurements, transistors are still over a dozen nm in size, not the 1.4nm you are trying to explain.
+We are also at the tail end of vertex shaders and DXR1.1, yet many engines have not been rewritten to utilize mesh shaders, let alone work graphs + mesh nodes, or alternatively virtual geometry.",analysis,pre-labelled
+"Lots of very interesting things in your comment.
+So you don't see a slowdown in hardware development?",reaction,pre-labelled
+"It's that software is not fully taking advantage of hardware.
+Rtx 2060 supports mesh shading, but it grew irrelevant, average performance wise long before Microsoft ever set a Mesh shading SDK to developers never mind games using it. Mesh shading is not the only hardware optimization that the 2060 supports",analysis,pre-labelled
+"It's such a damn shame. Do other cards that came after, support it also?",reaction,pre-labelled
+"As always u/dudemanguy301 has the most interesting takes. For sure tons of advancements that go beyond pure node PPA scaling.
+DXR 1.3 spec + work graphs for future of gaming and compute will be extremely interesting as well. I really hope for mass adoption of mesh shaders happens in 2026 as well as was said at Digital Dragons 2024 IIRC.",analysis,pre-labelled
+"I't's true that MOSFETs seem to be getting to be as small as the laws of physics allow, but just as there's a physical law governing how efficient a heat engine can possibly be there is also a physical law governing how efficient computation can possibly be and we aren't at the limit yet .So probably we're going to find some way to approximate it eventually, though it might be as radical change as the change from atmospheric pressure steam engines to high pressure ones. We don't know what form this might take, nano-electro-mechanical or nanotube circuits or ballistic electrons or what. Probably it will take a long time for the new paradigm to mature enough to be useful, plausibly decades.",hot_take,pre-labelled
+Very interesting. From reading the Wikipedia article you linked plus this one. It seems that there's another 5-6 orders of magnitude of improovemts. Of course the current materials might be the limmiting factor long before we get there.,reaction,pre-labelled
+"The big limiting factor is quantum mechanics getting weird at that level.
+The big breakthrough is a QFET that actually wants/needs the quantum effects.",hot_take,pre-labelled
+"In 10 years we will be right here.
+10 years ago was 2015.
+Internet is the same, phones are the same, PCs and servers are the same.",hot_take,cold
+"Phones from 2015 would start to lag and freeze up after two years
+That would be the year of the iPhone 6s and no they didn't, unless you bought low end devices.
+10 years ago you couldn't dream of running a 2k gaming display
+I'll round up a bit - the GTX 1080 was released 9,5 years ago and I was playing Starcraft 2 in 4k. 1440p would have been completely reasonable even in more demanding games.",analysis,pre-labelled
+"Yeah, I was referring to android ones. Iphones lasted longer, but definitely were getting laggy after a while. Remember the whole, we're slowing down your phone so you can have bigger battery life?",analysis,cold
+1440p? He was talking about 2k - 1080p.,hot_take,cold
+"I assumed he meant 1440 because saying you couldn't play in 1080 a decade ago would make even less sense.
+Edit: and btw, even though DCI 2k is 2048x1080, many people use ""2k"" to mean 1440p. 1080p is Full HD. I would avoid the term entirely.",analysis,pre-labelled
+"Anyone using 2k to mean 1440p are ignorant, misinformed or intentionally misleading. And yes that i ncludes BenQ who claims this on their site for some reason.",hot_take,pre-labelled
+"I am aware of that, but i’m 100% sure the person I responded to meant 1440.",reaction,pre-labelled
+"Even in such a case, its worth correcting.",reaction,pre-labelled
+"10 years ago you couldn't dream of running a 2k gaming display
+10 years ago i was running a 2k gaming display on a GTX 730!",reaction,pre-labelled
+Younger people don't realize this. It used to be tech was totally obsolete after a couple years. These days stuff from 10yr ago can basically do everything you need.,hot_take,pre-labelled
+"iPhone release announcement was less than ten years after pentium II release, though it wasn’t released until just over ten years later. And that was already the tail end of dennard scaling.",analysis,pre-labelled
+I'm posting on a 11 year old laptop that has 32 gb of ram. It's not the fastest thing but does web tasks fine. Granted it a was a very beefy laptop for it's time.,reaction,pre-labelled
+Yep. Buys top of the line gpu. Pixel shaders come out. New gpu instantly becomes useless since it doesn't support the hottest sauce.,reaction,pre-labelled
+2015 internet was very different and so was 2015 phones.,hot_take,pre-labelled
+"Without getting into details, people have been predicting the “end of progress” in computing advancements for decades, that sort of talk is nothing new, and always turns out to be wrong. Sure, there can be slowdowns as problems get worked out and solutions found, but those slowdowns are always temporary. I may not know exactly what computing will look like in 2035, but I am very confident that whatever CPUs we’re using (or GPUs, or…) will be way more performant than what we have today.
+… I just am hoping most of that performance won’t be taken up by AI slop.",hot_take,pre-labelled
+You and me both :),reaction,pre-labelled
+"They weren't exactly wrong. It's just that instead of the wall, we are dealing with dramatically reduced returns that the industry has to spend tons of money and work to still squeeze out. There is still some gold remainging, but you have to look really hard to still find it, and it looks like there's little to find no matter where you look.
+The generational gains in single threaded CPU performance we are seeing nowadays are a tiny fraction of what they were 20 or 30 years ago. The first Intel ""Core"" architecture released in 2006 with Conroe had about a 100% IPC gain over its direct predecessor. A new GPU could get you 3-5 times the performance compared to the card released just one year prior. Now you've got a 5080 that's 10% faster than a 4080 released over 2 years earlier.
+If you told someone living in 2000 that in 2025 Nvidia would be the wealthiest company in the world and yet we'd see tiny generational gains like that, they'd conclude that DOES sound like the end of progress.",analysis,pre-labelled
+"Fair, but headwinds slowing progress down isn't the same as it stopping altogether. Yes, I very much agree that we aren't seeing the generational gains that we used to see in the 90s and early 2000s, but we are seeing them. From the 1080 Ti to the 3080 to the 4090, we see a doubling in performance each time. For CPUs, a 9800X3D is going to fare far better than a 1600X.
+Now you've got a 5080 that's 10% faster than a 4080 released over 2 years earlier.
+Yes, but this here is showcasing Nvidia acting as it does when it has a defacto-monopoly position, knowing that consumers, in general, will ""take what they're given and like it"", while they focus almost entirely on AI hardware for data centers and others. Nvidia could have sold us a 5080 that had 50% more cores, 50% more VRAM at the same price, and made a healthy margin besides.. they didn't, bc they don't have to. Perhaps next gen in 2027 they'll return to historical norms, if AMD competes hard with RDNA5 (as rumored), and if the AI bubble has burst. Both are possible, we'll have to wait and see obviously to find out.",analysis,"pre-labelled, hard case"
+"It's not wrong. It's already happened. Frequency scaling died ages ago and performance per dollar died over the last 5 years. Theres still some minimal performance per area and performance per watt improvements, but those are on their last legs too.",hot_take,pre-labelled
+"No, I don't agree. While we aren't seeing the rate of frequency increase we saw up to the early 2000s, we nevertheless are seeing it, and overall performance increases along with it as well. As to performance per dollar, ofc that is increasing, CPU and GPU both (ofc there are exceptions for corporate greed reasons as much as technical ones). As to ""last legs"", like I said, people have been saying that for a long time, and they've always been wrong (for consumer compute). Problems get solved, that won't be stopping anytime soon.",hot_take,pre-labelled
+"No, I don't agree. While we aren't seeing the rate of frequency increase we saw up to the early 2000s, we nevertheless are seeing it
+We've seen like 25% improvement in 20 years. Used to get that every year.
+As to performance per dollar, ofc that is increasing
+Nope. It was pretty much flat from N4 to N3 and actually goes down with N2.
+As to ""last legs"", like I said, people have been saying that for a long time, and they've always been wrong
+No, they have been RIGHT. Certainly not every prediction every time. But Moores Law is just objectively dead at this point and dennard scaling died decades ago. Nobody ever said progress would be zero. These laws set a very high bar and while some progress has been made it's well short of that bar.",analysis,pre-labelled
+"We've seen like 25% improvement in 20 years. Used to get that every year.
+We did used to get that every year, I agree. We see WAY better than 1% per year even in the 2020s, just look at CPUs and GPUs.
+Nope. It was pretty much flat from N4 to N3 and actually goes down with N2.
+Not based on what I've read, it doesn't. Besides, I'm talking about overall performance of computing hardware you can buy at a given price, that's more than just whatever node you're on, as I'm sure you know.
+No, they have been RIGHT. Certainly not every prediction every time. But Moores Law is just objectively dead at this point and dennard scaling died decades ago. Nobody ever said progress would be zero. These laws set a very high bar and while some progress has been made it's well short of that bar.
+My point is that progress is NOT stopping, and that ""last legs"" is a subjective opinion. I do not deny that making advancements is a lot more difficult AND expensive than it used to be, but it's my opinion that it's not over yet, and it's your opinion (as I understand it) that it is. We'll see how things go over the next 10 or 20 years, we can perhaps compare notes then.",hot_take,pre-labelled
+"Well again when people say ""moores law is dead"" that doesn't mean progress is dead.
+But I mean fundamentally all the anger you see these days is due to the fact that people became conditioned to a rate of increase that is no longer sustainable.",hot_take,pre-labelled
+"You can say a similar thing about GPU’s. Most improvements in performance in Nvidia's cards came from brute forcing, they’ve been pushing more and more power to their cards to the point that once a week, if not more often, you can see somebody with a melted cable.
+That's to do with the fancy new 16pin power cable (and its revisions) being very ill designed for it's purpose.",analysis,pre-labelled
+"But the point is still there, isn't it? The current GPUs use more power than whole computers 15 years ago. Of course you can do a lot more with them. But the gains in efficiency have slowed down.",hot_take,pre-labelled
+"Yeah efficiency gains have slowed quite a bit, it's why Nvidia is now going in the direction of high quality upscaling, frame generation and various AI technologies.
+And to elaborate on the issues with the 16pin power connector it's design has significantly reduced safety margins built in to the spec than older cables had and... with their Geforce 4000 and newer cards they decided to remove a major safety feature known as Load Balancing, so now when any of the power wires gets overloaded it just... stays overloaded as the video card can't sense anything about the condition of the wires.",analysis,pre-labelled
+"I think we are in agreement 😃 The hardware improvements don't come as easily so they have made clever advancements with AI frame gen.
+I also agree with the fact that 16 pin power connector design is just bad.",reaction,pre-labelled
+"high quality upscaling
+lmao",reaction,pre-labelled
+It's better than the majority of other solutions employed by games.,hot_take,pre-labelled
+They feed us cures to their poison.,reaction,"pre-labelled, borderline"
+"GPUs are riding the max draw because there is a market for the extreme high end and multi GPU is dead for gaming. No matter how efficient things are, some people are still willing to pay for the fastest thing possible. The 5090 isn't pulling 500W to meet some engineered performance target, it's basically the fastest thing Nvidia could make to serve their markets.",analysis,pre-labelled
+So you see a wave of power optimizations in the 5-10 years?,reaction,pre-labelled
+"They're always happening, but unless people stop buying $3000 cards, halo tier GPU dies will continue to be massive and push a lot of power.",analysis,cold
+"I think there's a lack of understanding of progressive innovation in dealing with technology going on here.
+I mean , for goodness sakes we have Integrated graphics on processors that are running faster than graphics cards did fifteen years ago. While consumnIng less power and producing less heat.
+The Christmas card I purchased for my folks that plays little drummer boy has more memory than the space shuttle did , and we're talking by a substantial amount.
+You can't quantify that you can do more with them but then the gains have slowed down?
+Doesn't doing more directly relate to actually having gains?
+I'm playing a game for fun and it is actively rendering real time , particle physics and lighting. To an extent that even fifteen years ago , the military couldn't even dream of running simulations to that extent.",hot_take,pre-labelled
+"I think we're misunderstanding each other.
+I'm not saying the gains in the last half a century weren't amazing. They have. What I am asking/discussing is the future.
+The improovements that made is possible to put that much compute and memory on your christmas card or integrated graphics, are largely based on miniturisation, and to me it seems that we're reaching the limmits of how small we can make things.",hot_take,"pre-labelled, borderline"
+"We aren't actually. It is a lot harder but we aren't at the absolute theoretical limits yet but absolutely are in a slowdown. You can lookup the IEEE conference on chip roadmap. All major companies from tsmc to asml to intel and everyone publish what they are hoping to do for the next immediate 5 years on this. All pdfs (of the total event) for every iteration is available online at ieee's website.
+Improvements are no longer going to be just bump up the core count by miniaturizing features. New innovative creative ideas are going to come a lot more often and bring small Improvements. GAAFET, Power vias, co design optimization are all part of this to better integrate the whole process from design to actual manufacture of products.
+The end is certainly not near.",analysis,cold
+"We're looking very quickly on a total structural or heavy structural change , leading into a total structural change across the market.
+We're talking about different layering layout , connectivity and power delivery. You need to actually go and look up the recent conference with the IEEE Road map.
+Even if they only achieve half of the numbers that they're claiming are possible in the next few years , there's going to be a large leap in productivity , efficiency and speed.",analysis,pre-labelled
+"we have Integrated graphics on processors that are running faster than graphics cards did fifteen years ago
+Fifteen? More like 5, for Radeon at least. The 890M is beating mobile 3050s in many cases and the 8060S is ahead of the 4060M",analysis,pre-labelled
+"I think what people forget is that the cost of continuing making Moore’s is going up even faster, and chip companies have found out to implement more functionality into chips so it basically doesn’t matter, and to keep prices at a level people will still be buying (the AI wave is out of reach for small companies and real people as of right now)",hot_take,pre-labelled
+"Yes, they're pushing the limmits so the costs with each generation is bigger",reaction,pre-labelled
+Dedicated processors or chiplets for specialized tasks seems like a good way to go,reaction,pre-labelled
+Moores law is projected to continue for at least the next decade,hot_take,pre-labelled
+"But the tsmc road map clearly shows it slowing down. Maybe it's on the chip side where they're making them bigger, but even that has its limits.",analysis,"pre-labelled, borderline"
+"Do you not realise that the naming convention is a load of nonsense now? 2nm and 3nm doesn't correspond to any actual dimension.
+And transistor performance isn't just based on scaling down the size.",analysis,pre-labelled
+"They have entirely new nodes coming out every year, what is slowing down? Looks like they are speeding up.
+Note that the names are marketing and have been for basically 15 years now.",analysis,cold
+Those new nodes are 15% improvements not 100% improvements like they used to be.,analysis,pre-labelled
+"Moore's law states that cost per transistor goes down by half every 18 months. The new nodes are more expensive per transistor, Moore's law has not just stopped, it has reversed.",analysis,pre-labelled
+"Moores Law is already dead. Thst doesn't mean progress won't continue, bit it's far slower than Moores Law.",hot_take,pre-labelled
+No it's not? Tsmc itself states that it's keeping track with moores law,hot_take,"pre-labelled, hard case"
+"By TSMC's own marketing, N3E vs N2 is similar gain as half node jump of N7 to N6 back then.
+Then you look at N2 to A16 to A14. Depression begins",analysis,pre-labelled
+Moores law has been dead for at least a decade and even then it lasted a lot longer than anyone expected it to. Moore himself said it will stop being applicable in 1986.,hot_take,"pre-labelled, hard case"
+"“You don’t need to bother optimising the code after you’ve done the basics, because a customer can just buy a faster computer.”
+People actually being taught this now? When I was in school learning to code was like 20% and learning to optimize was 80%.",reaction,pre-labelled
+"Yeah, it's not optimal",reaction,pre-labelled
+"When I was in, we were taught to do due dilligence optimizing, but also not to waste time chasing perfect optimization. Basically if you were in the 80-90% ballpark of the max performance it was 'good enough'",reaction,pre-labelled
+"It do be like that, Mr. rimantass",reaction,pre-labelled
+Kinda looks like that,reaction,pre-labelled
+"“You don’t need to bother optimizing the code after you’ve done the basics, because a customer can just buy a faster computer.”
+Maybe he said that sarcastically? In some areas optimization is far less important than robustness, or maintainability, modularity, and expandability. If you're making a small database for a mom and pop shop, that can could have been true 20 years ago. There are cases where optimization doesn't matter that much, because it's the difference between wasting 0.5 sec and 1 second of a customers time.",hot_take,pre-labelled
+"Maybe, I think also he was trying to make us understand how much developer time is worth and if you spend a day cutting 1 second of loading time, no one's going to pay for it.",reaction,pre-labelled
+"We can already see it happening, on the architecture level, ARM and RISC-V bringing crazy improvements in performance, and power efficiency.
+You have been lied to xd
+Differences are tiny
+12NM process node for the first time we’re not going to see an increase in the amount of RAM an average consumer has.
+Wut?
+People spent like 2 decades on 8 16 32gb",hot_take,pre-labelled
+"People spent like 2 decades on 8 16 32gb
+Not even sure what you mean by this, but taking you literally, no they didn’t, not even close. If you think consumer PCs had even close to 8GB of RAM in 2005, much less 16 or 32, well, they didn't.",analysis,pre-labelled
+Yeah. In 2005 if you had 4GB of RAM you were cool.,reaction,cold
+I will never forget how awesome it felt when a LAA patcher released for a game I was interested in and how much more stable it immediately became.,reaction,pre-labelled
+"Ok, fair, maybe im off by 5 years, but still 1.5 decade",reaction,pre-labelled
+"Not really. I mean, yes, high end systems had 8GB of RAM in 2010, but high end systems today have 64GB. Over time, the amount of RAM people have in their systems increases. If that's what you meant, then I agree with you.",analysis,pre-labelled
+"yep. My ""Beefy"" machine i built in 2004 had 1GB of RAM.",reaction,pre-labelled
+"When you have clowns who believe ""unused RAM is wasted RAM"" and don't know basic programming concepts, no.",hot_take,pre-labelled
+Hey it's free realestate,reaction,pre-labelled
+Free? Maybe. Is anyone actually buying? No.,reaction,"pre-labelled, borderline"
+"Computing has been memory bandwidth constrained since the early 1990s. You need to keep your compute fed at all times. The problem is that SRAM doesn’t shrink nearly as much as logic when it comes to improved nodes, so it’s still both expensive and fault-prone.
+The gains in switching speeds and MMTr/mm from new nodes was always going to end, and the memory bandwidth problem was always going to need to be addressed. Apple’s unified memory architecture and AMD’s X3D cache are different approaches to this.",analysis,pre-labelled
+"I guess that's part of why compute in memory has been touted as the ""holy grail"" for decades. The power savings would also be massive nowadays... Moving data is the most power intensive part of computing now, which is nuts.",analysis,pre-labelled
+"The manufacturing-based gains in compute performance are going to slow down. Quantum tunneling puts a hard limit on transistor gate length and this will eventually be reached in a decade or so.
+But this doesn't matter nearly as much as you think. For the past 2 decades, arithmetic throughput (TFLOPs) has been on a runaway trajectory compared to improvements in memory bandwidth. Today the vast majority of software is memory-bound, meaning the chip is idling while waiting for new data from memory.
+So far there has been little to no incentives to improve memory technology. With the AI boom this is finally changing - at least AI brings this one good side effect - and the demand for more and faster memory has skyrocketed. A few years ago GPUs had 24GB VRAM at max. Now they have 288GB, and soon 1TB VRAM. Memory tech is far from physical size limits, and there is a long way to go for hardware improvements there, like higher vertical stacking.
+That said, your CS teacher gave you awful advice. Optimize your software to the max. Check how close it is to 100% efficiency via roofline model. It makes a huge difference. Especially today with RAM price insanity, a software that does the same task in 1/6 the memory capacity just through optimization is worth gold, and saves users a fortune.
+Microsoft, Meta, Google, Reddit, game studios, etc. eliminate decades of hardware manufacturing progress by releasing unoptimized garbage software.",analysis,pre-labelled
+"I agree with you. Single thread performance is reaching the ultimate wall for silicon. Improvements that used to take months now take a decade.
+Most of the improvement of the last decade came from more cores, which is the way GPUs also could improve at a faster rate, since paralellization is the mais GPU business.
+Unfortunately, if we want, say, 10x the performance of what we currently have, I don't think it will be on consumer hardware anymore, but only on power hungry datacenters, because the exhaustion of the lithography improvements roadmap and the of the performance techniques and algorithms will not allow. And, if it ever happens, at least in silicon, it will take decades.
+The problem is that 10x is negligible in terms of computing scale.",hot_take,pre-labelled
+https://en.wikipedia.org/wiki/Amdahl's_law,analysis,"pre-labelled, hard case"
+Programmers have gotten away with being lazy for far too long. Now they have to actually write efficient code. Oh the horror!,hot_take,pre-labelled
+"Most engineering is a type of optimization, and there's still progress to be made with chip fabrication (in addition to architectural improvements). We don't have the exponential improvements on transistor density following Moore's law anymore. Maybe there could be a breakthrough, like spintronics or some other exotic transistor development, that could enable exponential progress again but we will continue to slower, incremental improvements in hardware.",hot_take,pre-labelled
+"No, it’ll be something cloud based and require a subscription or 10.",hot_take,pre-labelled
+HyperNA can go down to A2 (0.2nm),analysis,pre-labelled
+"Oh shit that's an order of magnitude!
+Thought I am interested how they will handle quantum tunneling. I think i heard they already have to take it in to consideration with current tech. It must be a huge headache at 0,2nm.",reaction,pre-labelled
+"Gate All around is meant to address quantum tunnelling for the medium term. (ribbonfet) They will need some new tech for A2.
+And finfet was the original ""solution"" to quantum tunneling.",analysis,pre-labelled
+and the gates will still be 28nm like they are now. Just with a fancy name.,analysis,pre-labelled
+"Gate pitches have actually decreased with generation. But yes, you are right that they are not in the single nm.
+Remember, transistor density has increased every step or half step and you only do that by shrinking the dimensions.",analysis,pre-labelled
+"The physical transistor gate size have no decreased. they hit the wall with 28nm and despite how much money Intel pouted into it they failed to actually shrink it. The 14nm ones are actually just 28nm ones split in two in attempt to make it sound like they are smaller.
+Desnity increase has come from layering and other technological implementations rather than physical size shrink since then. Take the now popular backside power delivery everyone wants to happen. If it works, the power delivery will take less space on the transistor layer so you can pack more of transistors of same size in. Thats a density increase.",analysis,pre-labelled
+"Carbon nanotube computers, not within the next 10 years though.",hot_take,pre-labelled
+"Yeah, there was a lot of talk about graphite semiconductors 15 years ago",reaction,pre-labelled
+Moore's law is working only for AI as jacket guy said. It was not working for gamers 1 week before his speech... $$$,hot_take,pre-labelled
+"AI has unlimited resources, for now. But even they are constrained by how fast you can build stuff.",hot_take,"pre-labelled, borderline"
+"Besides transistors still shrinking, there are a few big things coming - withing about a decade. Gaafets make stacking the CMOS device vertically practical, which would drastically reduce the horizontal area of a transistor cell.",analysis,pre-labelled
+"That's really cool, though I'd guess it has its limits due to increased thermal load",reaction,pre-labelled
+"imo, we’ve gotten away with not optimizing computing for decades. They used to actually care about number types because they took up X amount of memory and it was a limited resource. These days we seemingly have endless resources, so like your CS prof said, what’s the point of optimizing.",hot_take,pre-labelled
+"No, not soon, unless your definition of it is what’s already happening for years. It’s not slowing down drastically or whatever bs",hot_take,pre-labelled
+"We'll just build physically bigger computers which is what you already see with everyone competing to build ever larger GPU clusters. But the current approaches are relatively inefficient in terms of power efficiency, latency, bandwidth, cost. As we hit the limit of transistor size expect to see larger dies and larger scale integration, stuff like wafer scale, chiplets, die-to-die interfaces. Making everything smaller and closer together works at every level and we are not even close to the limit of miniaturizing everything larger than the transistors on a silicon wafer. Design-wise there will likely be huge challenges ahead for building systems with larger and larger transistor counts that are performant and efficient.
+And don't forget clock speed scaling, which largely hit a wall on silicon and we're still not much faster than back in the Pentium IV era but when the only thing left for manufacturers to try to scale is clock speed you can bet they'll go back to throwing everything at it.",analysis,pre-labelled
+"We can see it on the OS side as well. Apple's IOS and Linux are much more efficient at using resources than Windows is. And it’s not just because they can take advantage of ARM based processors
+There isn't this one type of efficiency one architecture just dominates. Different architectures have different efficiencies. ARM is efficient at light workloads (like the ones used on Smartphones). x86 is more efficient at heavy workloads like the ones which run in datacenters or workstations.
+Engineering is about trade offs. There is no silver bullet.",analysis,cold
+We will never have a holo-deck.,hot_take,pre-labelled
+"There are multiple paths forward on the hardware front. It's unclear who the winners and losers will be, but computers are nowhere near a performance wall. While performance gains have slowed down, core count and energy efficiency will continue to increase steadily. Eventually we will change substrates entirely. Quantum computers require supercooling and are often inferior to classical computers in most cases. Their only real advantage is that they can run certain algorithms.
+There are huge gains to be made from architectural changes but it's very, very expensive to do this because there's so much inertia.
+CPUs are often bottlenecked by RAM speed, not the CPU itself. They spend a lot of time sitting around waiting for data. There are huge performance gains to be made here.",hot_take,pre-labelled
+"My guess is we'll see bigger CPUs at some point. Chiplet designs allow larger surface without reducing yield. It has it's own drawbacks, but it seems to be working well for Intel and AMD. Even without chiplet's they'd probably just start making larger cores at a higher cost if that's necessary for tasks that don't scale well with multithreading. Maybe if moore's law hits a wall it might lead to manufacturers sticking to one process instead of constantly needing to upgrade. This could lower costs for that process over time, which would make it economically feasible to make bigger dies.
+(This is relatively uneducated speculation. Please correct me if I'm wrong about something here)",analysis,pre-labelled
+"Or do I have it all wrong?
+lots yeah, but nothing wrong with that of course.
+The newest TCMS node is just 2NM, the next one is just 1,6NM and the one after that is just 1,4NM.
+those names are 100% meaningless nowadays. they no longer relate to anything.
+so just ignore that number in those process node names, except, that this is the name for the process node.
+so in regards to process node progressions and performance progressions, the process node roadmap is mapped out to 2039 by imec now:
+https://www.youtube.com/watch?v=0wRvbIaTUQw
+cfet with a planned introduction in 2031 will alone double the density.
+now LOTS of delays are possible. lots of issues and even the risk, that they can not solve a problem at all.
+and of course we don't know production cost differences. (note production cost differences =/= what tsmc (and others i guess) will charge)
+but the point is, that semi conductor progress is planned out AT LEAST until 2039. you got 13 years of progress already stacked out to see followed through.
+What are your predictions for the next 5-10 years?
+<points at imec roadmap.
+i don't know the details of the ram industry roadmap, but guess what they have one too to increase density and reduce the production costs/GB.
+BUT you may or may not see that decrease in cost, because it is a literal cartel in charge of the memory prices. they are literally called the memory cartel.
+You can say a similar thing about GPU’s. Most improvements in performance in Nvidia's cards came from brute forcing, they’ve been pushing more and more power to their cards to the point that once a week, if not more often, you can see somebody with a melted cable.
+several things wrong here,
+cards melting or catching on fire has NOTHING to do with the power, that a card consumes.
+the cards melt or catch on fire, because nvidia the purely evil scum company pushed a fire hazard onto the public and tripled down on it.
+we know how to push 720 watts through a connector the size of an nvidia 12 pin fire hazard PERFECTLY SAFE with proper safety margins. the xt120 connector, that is widely used and known does that without a problem.",analysis,pre-labelled
+"part 2:
+you wouldn't say ""oh another ford pinto caught on fire, i guess we can't have cars go that fast anymore"". if you don't know the ford pinto had a deadly engineering flaw, where it would easily catch on fire.
+and the power also doesn't matter that much, as we got 9070 xt cards, that pull a lot less power, that come with a 12 pin fire hazard sometimes also melt.
+there have been 5 sapphire nitro+ 9070 xt cards melt thus far, that we know.
+also nvidia decided to drive the power of the 5090 very high. they could have had it running a lot lower power with barely any reduced performance as you can see here:
+https://www.youtube.com/watch?v=kdjOfKPt51s
+80% power target and you lose like 5% performance.
+and all that a 5090 is, is a BAD gaming architecture (as if nvidia still cared lol... ) at close to the reticle limit at 750 mm2 run at very high power and they put a fire hazard power connector on it just to frick with people.
+and in regards to graphics performance improvements you may be confused about what is actually going on.
+you see there is A LOT of performance improvements still going on, but you just mostly aren't getting them anymore.
+the 4090 is about the same size of a die as a 3090 die and the 4090 at 4k is 73% faster.
+you know what you got at the low end, despite architecture and process node improvements?
+REGRESSION! you got regression. a 3060 12 GB turned into a broken 4060 8 GB.
+the 3060 is a 272 mm2 die and a 192 bit bus (360 GB/s)at 330 us dollars
+the 4060 is a 159 mm2 die and has a 128 bit bus (272 GB/s) at 300 us dollars.
+so nvidia sold people a 42% smaller die with a 25% memory bandwidth reduction and charged the same.
+the POCKETED ALL of the process node and architecture improvements at the low end and even stole 4 GB of memory on top of it.
+and THIS can give you the illusion, that there is stagnation.
+there is NOT.
+yes process node progression is slowing down, but we also got advanced packaging and other stuff coming along, that may push things more.
+memory, graphics cards and cpus are all still progressing, the question is just whether or not they will give you that progression or just massively increase prices, or just not sell you anything anymore at all.",analysis,pre-labelled
+"short part 3 i guess:
+and NO you are not optimizing yourself out of anything here.
+you NEED the performance. you need the memory, you need the cores and the gpu grunt.
+there is no way around this. 8 GB vram is broken today and there is no fix for it and it will only get worse for example.
+there is no optimizing yourself out of this. you NEED the memory to hold the assets you need (yes yes some asset streaming optimizations, bla bla.. we're talking general big picture here)
+we need more memory, we need more gpu performance, we need more vram, we need more cpu performance for the games of the future, whether they are optimized like shit or amazingly optimized.",hot_take,"pre-labelled, borderline"
+"Regarding your first point about process node progression. While it’s debatable how much the naming means and varies in PPA gains, if you do the maths, from 2nm -> 1.4nm is the same ratio as from 90 -> 65 -> 45 etc. Also in the past we always have half nodes between major nodes.",analysis,pre-labelled
+"Realy good point.
+But It is looking like it's slowing down. It used to be 18 months now it's closer to 36.",analysis,pre-labelled
+"How is iOS more optimized than windows, that doesn't make sense. I need my phone to be optimized to conserve battery, I need my workstation to be optimized at working at full speed no matter what when I need it to. Each are optimized at doing different things because they do different tasks.",hot_take,pre-labelled
+My bad I meant MacOS. Not an Apple user so I get the names mixed up all the time 😂,reaction,pre-labelled
+"Eh, I would still pick windows every time. I've used MacOS for work and it doesn't come close to managing the several heavy lifting applications on multiple monitors the way windows does it. It's mostly designed around a slower workflow on a laptop.",reaction,"pre-labelled, borderline"
+"With the way windows are bloating, I'm more and more interested in switching to Linux",reaction,cold
+"That seems to be like an interesting future, instead of having CPU/GPU we're going to have a bunch different PU specialized for different tasks",reaction,pre-labelled
+The last time we had a 100% node improvement was like 2 decades ago though. And chips have gotten much more powerful in the last 2 decades still.,hot_take,cold
+Moores Law says 100% each node. Hence when it's being declared dead.,analysis,pre-labelled
+Moore's Law doesn't say anything about the node. Just that the chips double in transistor count every 2 years. This doesn't have to be achieved by density alone.,analysis,pre-labelled
+"Moore's law (observation) was entirely density, not cost. And it was later amended for a longer period. And it hasn't really been true in the literal sense for decades. We are only 5 halvings away from atom sized features now.
+Performance and performance-per-dollar has been the proxy for a post-literal Moore's world for a long time. Thinks like GPUs have been consistently doubling in those figures about every 2.5 years since the early 2000s.
+Nodes increasing in price is definitely a novel thing, and partly to do with extremely high demand rather than a technological limitation.",analysis,pre-labelled
+Moores law is about density and has nothing to do with cost.,analysis,pre-labelled
+"I mean that this transition wasnt rly fast, it took a few years per another power of 2",analysis,cold
+"I predict that within 100 years, computers will be twice as powerful, 10,000 times larger, and so expensive that only the five richest kings of Europe will own them.",reaction,pre-labelled
+Dr Frink from The Simpsons?,reaction,pre-labelled
+Glaven!,reaction,pre-labelled
+Only if God Emperor X AE A-12 allows it.,reaction,pre-labelled
+"I think more of an emphasis will be put on it ""looking"" good. When I was a kid, I don't remember there being any LED lighting in most PCs that I saw",hot_take,"pre-labelled, borderline"
+Some of the office machines I've seen for sale look more like an industrial cooling unit than an actual computer.,hot_take,cold
+For a long time LEDs could only be red. Blue LED and then multicolored LED are a more recent invention.,analysis,pre-labelled
+Blue light led is recent. It won the scientists that invented the 2014 noble prize in physics,analysis,pre-labelled
+"Enthusiasts have always made ""good looking"" PCs, it's just that what was ""good"" has changed over time and technology. Even back in the day (2000s), before the mass availability of RGB LEDs, people were putting in cold cathode fluorescent lighting in their cases and UV reactive parts (cable sleeves, fans, coolant). Blue LEDs were all the rage maybe mid-late 2000s? But these people were a very niche group since this often required a lot of DIY. The general uptick in gaming among the general public has also brought what once was enthusiast-only components to mass market (e.g. water cooling, lighting) in a plug and play format.
+Today, there is a big focus on RGB to stand out, but you could argue that all this RGB aesthetic will be looked back as fondly as molded chromed plastic",analysis,pre-labelled
+"Having maxed out how much technology can be fit into a small smartphone, engineers employ temporal gate technology that allows multiple components to coexist in the same space-time. However, there is the odd glitch where the gates rip holes in the fabric of space-time and are prone to swallow small moons.",reaction,pre-labelled
+"seems like that would be a pretty short lived invention, not to mention the dangerous testing phases.",reaction,pre-labelled
+"Well I mean do you need that many moons really? Oh shoot, accidentally deleted ours.",reaction,pre-labelled
+"temporal gate technology
+...in the process either accidentally opening a portal to Phobos, or causing some sort of resonance cascade kinda thing...",reaction,pre-labelled
+RPG video game reference?,reaction,pre-labelled
+Do you want demon invasions? Cause that's how you get demon invasions.,reaction,pre-labelled
+"If I'm the one pressing the button, I get fired for causing a ""demon invasion"".
+If my manager presses the button, he witnesses a ""sudden undesirable proliferation of mortally challenged non-HR-compliant entities"" likely caused by ""probable negligence by someone like me"", so I get fired.",reaction,pre-labelled
+The last description 😂,reaction,pre-labelled
+"Here’s the collatz function from the future:
+If (n%2==0): ->Promptchatgpt(“what is “ + str(n) + “ divided by 2?” Else: -> Promptchatgpt(“what is “ + str(n) + “ times 3 plus 1?”)",reaction,pre-labelled
+I asked ChatGpt about this and went on an interesting tangent about code,reaction,pre-labelled
+Share!,reaction,pre-labelled
+"It's kinda long so I'll give you the Cliff Notes version:
+Yes, this is a pseudocode snippet that seems to describe a decision-making process for interacting with ChatGPT, based on whether a number n is even or odd. Here's an explanation:
+Pseudocode Breakdown: Condition: if (n % 2 == 0): This checks if n is an even number (remainder is 0 when n is divided by 2). Action if Even: Promptchatgpt(""what is "" + str(n) + "" divided by 2?"") If n is even, it forms a prompt for ChatGPT asking, ""What is n divided by 2?"" Else (Odd Number): Promptchatgpt(""what is "" + str(n) + "" times 3 plus 1?"") If n is odd, it forms a prompt for ChatGPT asking, ""What is n times 3 plus 1?"" Purpose This logic might be part of implementing a simple sequence like the Collatz Conjecture (or a similar iterative process). In the conjecture: If n is even, divide it by 2. If n is odd, multiply it by 3 and add 1. It seems the code is designed to generate appropriate ChatGPT prompts based on the value of n.
+Me: How does any human understand these codes? To me about a third of it is gibberish
+You're not alone in feeling this way—code can seem like gibberish at first! Understanding it is like learning a new language: daunting initially, but it becomes easier with practice and context.
+Here's how people approach making sense of code:
+Recognizing Patterns Code follows specific structures and logic, much like grammar in language. For example: if checks a condition (like asking, ""Is it true that...""). % means ""remainder when divided by."" This pattern often checks if a number is even or odd.
+Breaking It Down People dissect code piece by piece: python Copy code",analysis,cold
+"(continues breakdown of the code)
+3. Relating to Real-World Logic
+Coding mirrors logic we use daily: ""If it's raining, take an umbrella. Otherwise, wear sunglasses."" Replace that with numbers: ""If the number is even, divide by 2. Otherwise, multiply by 3 and add 1.""
+4. Ignoring Jargon
+Terms like return, str(), or print() can feel alien. Think of these as tools, like a hammer or screwdriver. You don't need to know how they're made, just what they do:
+print() → Shows text on screen.
+str(n) → Converts a number to text so it can be shown.
+5. Practice + Analogies
+Over time, common structures feel natural. Until then, analogies help: Think of the Collatz code like giving cooking instructions:
+""If it's a vegetable, chop it in half.""
+""If it's a fruit, cut it into quarters and add sugar.""
+Would it help if I rephrased the code into something more conversational or step-by-step?",reaction,pre-labelled
+Jesus fuck,reaction,pre-labelled
+"Translation (I think)
+If n divided by two equals 0, then send a prompt to chatgpt asking it ""what is n divided by two?"" otherwise ask it ""what is 3n+1?""",reaction,pre-labelled
+Can you speak mandarin?,reaction,pre-labelled
+"Shampoo bottles will have screens that constantly play ads, restaurant menus playing ads, ffs we already have gas pump handles that play ads.",hot_take,pre-labelled
+"Leela: ""Didn't you have ads in the 20th century?""
+Fry: ""Well sure, but not in our dreams! Only on tv and radio...and in magazines...and movies. And at ball games, on buses, and milk cartons, and t-shirts, and bananas, and written on the sky. But not in dreams! No sirree.""",reaction,pre-labelled
+"Gas pump handles playing ads drives me up a fucking wall. I'm already paying you money here, now you're exploiting the fact that I'm basically trapped for the next few minutes to annoy me with ads to get a couple extra cents. Wtf",reaction,pre-labelled
+Second button down on the right is usually the mute button on these pumps.,reaction,pre-labelled
+"Asked to leave local gas station for ""tampering"" with that",reaction,pre-labelled
+"Fun fact, There is a button next to the screen that will mute the gas station ads. It's the top right button at the gas station I go to. I immediately press it every time I start pumping.",reaction,pre-labelled
+"So I've heard, but either my local one doesn't have it, or I'm dumb as a fucking rock.",reaction,pre-labelled
+"Gas stations don’t make money selling gasoline fyi
+Inflation has caused this fyi. Once a bag of chips hits $7, suddenly it makes sense to buy in bulk",hot_take,pre-labelled
+This isn’t really computer hardware though,reaction,pre-labelled
+"I saw an electronic menu at a table in Edmonton last week. When you weren't actively looking and pressing buttons it would default to movie trailers.
+Last time I go there.",reaction,pre-labelled
+"I imagine as internet speeds increase, we will get pushed into a model where very little of the computing is done locally and we are forced to use Remote Desktop for everything. Home computers will be cheap, paper thin laptops and we won’t actually keep any of our data on them. That way Microsoft has full access to our activity to train copilot, we cannot opt out of ads, and we are forced to pay a subscription to use the computer at all.",hot_take,pre-labelled
+I hate that you're probably right.,reaction,pre-labelled
+"Eh. Thin clients have been a thing for a very long time and that hasn't happened.
+It would also put PC hardware manufacturers out of business. Also worth noting Microsoft isn't the only manufacturer of operating systems.",hot_take,pre-labelled
+"The latency would drive most people mad. It's already light speed, can't get faster than that. The human eye can perceive delays as low as 30 milliseconds. So that's about 550 miles round trip. If there's any kind of handoff at all then each one lowers the range. You end up in my scenario at work. Where I'm remoting into a machine 100 miles away but there's a half second of input lag. Which is fine if you're kicking off a render or hitting a button. But typing or executing a bunch of commands is aggravating .",analysis,pre-labelled
+Yeah it would be horrible feeling without local processing. Like with online games your local system is doing a ton of the processing so things feel smooth. Could you imagine playing a shooter completely remote with even a 40 or 50ms ping? It would feel horrible,hot_take,pre-labelled
+Which is why Stadia died before it even launched.,analysis,"pre-labelled, borderline"
+"I've run thin clients on gig-e ethernet to a computer in the next room...the latency still sucks. I've also used AWS' virtual workstations(VDIs) on REALLY fast, low latency(20ms) networks....it STILL sucks. it sorta works but it's noticeable.",analysis,"pre-labelled, borderline"
+"There'd be tricks to make the user experience more streamlined. Could still have something of an extremely barebones OS on your system, basically a glorified web browser, to handle UI stuff on the client side so you're not stuck waiting every time you move your mouse. The server could analyze user activity to determine what you're most likely to try to do next, and start doing those things preemptively so it's ready/has already started as soon as you click. Only thing that wouldn't work well is games and stuff that requires real-time feedback and can't be fudged on the client side.
+However, the tech giants running these systems could drastically reduce latency by just putting servers in every city (and not offering their services in places too far for a fast connection). If users are always either within 30km of a server or not allowed to connect, customers will never complain about latency.",hot_take,pre-labelled
+"Name one server based processing game or service people use that no one complains about lag on. We aren't even there with streaming services and those are the absolutely best case Goldilocks zone of server processing.
+Now, will they just do it anyway and force everyone to have a worse experience? Maybe. But there's no way in the next 20-30 years you'll have server side processing that matches people's experiences using their personal PCs.",hot_take,pre-labelled
+It's a fools errand to do this because I can already buy a $200 laptop that will give me zero latency and do most basic things a thin client would do.,hot_take,pre-labelled
+"I don't think we will be forced to use remote desktop. SSDs will continue to fall in price. Eventually, 1PB of SSD may cost $100 in today's money. Remember how expensive it was in the 1950s to buy 1MB of disk space, and how much cheaper it is now, 70 years on?
+Also, Internet speed increases past a certain point are not really that important. I have 1.5GB/s wired internet at home and don't actually use any Ethernet cables. The speed comes out to 400MB down and 150MB up when using Wi-Fi and I don't have a problem even when multiple people are watching YouTube videos at the same time.",analysis,pre-labelled
+"Just a heads up, the speeds you're seeing advertised from your ISP and Speedtest are in megabits per second (Mbps), not megabytes per second (MB/s). Megabytes are 8 times larger than megabits so the difference is important in the context of Internet connections.
+1.5Gbps is 187.5MB/s. 1.5GB/s is 12Gbps, which is much faster than the vast majority of home Internet connections and networking hardware are capable of delivering.",analysis,pre-labelled
+"I doubt this one from more points of view. In special the cheap part. Also maybe as normal person you may not care or understand where your data is stored, but in private sector there are actual contracts stating how and where data should be stored. You are thinking thin clients. Also internet speed may increase, reliability is a different topic.",hot_take,pre-labelled
+This would never happen. Businesses and governments alone would blow that shit right up.,hot_take,pre-labelled
+Computer companies : WRITE THAT DOWN WRITE THAT DOWN,reaction,pre-labelled
+"You just described a Chrome book. Been using that for several years now. Computing is local, but all data is remote (Google, MS, Amazon, etc). For office work, this is sufficient.",analysis,"pre-labelled, borderline"
+"Then some day on the future, a genius would come up with the concept of a PERSONAL computer",reaction,pre-labelled
+"Companies have tried to do this before and so far it’s flopped hard. Stadia is a big recent example. At least for now, consumers won’t have it.",analysis,pre-labelled
+How incredibly wrong you are. The fastest the internet can go is the speed of light. It already goes that fast. That means it can’t get any faster. All it can do is increase bandwidth and get marginally better routing.,hot_take,pre-labelled
+This is terrifying but also very likely to happen.,reaction,pre-labelled
+I think this would be true for quantum computing. It just isn’t practical to build one for the home or office so you will just bounce your queries off a quantum server somewhere in the world.,hot_take,pre-labelled
+"The sad thing is, the PC industry started in large part because the people who now run these corporations were against the dumb terminals of the past.
+We want to help people break free from the control of the corporations. Well, that is until we're the ones running them.",hot_take,pre-labelled
+Might be possible but there always seems to be new processor from Nvidia and lots of demand from normal people. I doubt that will change in the foreseeable future. Unless cloud computing will be exceptionally cheap,hot_take,pre-labelled
+"Chromebooks are kinda the first step towards this and they've already been a thing for over a decade. They have a proper (albeit barebones) desktop OS, but it basically just serves to host Google's suite of web apps.",analysis,pre-labelled
+"I keep installers for software going back to Win3.1 . The old stuff only runs in VMs but I'm not buying into software as a service.
+This probably means the real computers with storage and all get severed from the Internet, basically airgapped to keep infections down.",reaction,pre-labelled
+Might even be just a screen/kb/m you use your phone to wirelessly power to get to the remote session.,hot_take,pre-labelled
+"""Please drink your verification can.""",reaction,pre-labelled
+"I see this as the typical consumer version, like how many young adults now don't even have a keyboarded computer and have grown up using phones and tablets for everything. Then the computer hobbyist version will be more or less the same, but with all your devices connected to a central server at your own home instead of paying the subscription.",hot_take,pre-labelled
+"What you are referring to is called the cloud, and is already well underway. Microsoft already has all our data 'to train copilot'. You are correct that our hardware will become less relevant though.",hot_take,pre-labelled
+What they're describing is called a thin client. They're existed for decades but aren't suited for personal use,hot_take,pre-labelled
+"This is why my resistance to switching to Linux was nothing more than ""ech, I have to learn a new OS""",reaction,pre-labelled
+Subscribe or die,hot_take,pre-labelled
+And then the home computer hobbyists will still be tinkering away using some form of Linux on bulky personal machines and homeservers to maintain personal control over their own data.,hot_take,pre-labelled
+Good point. I see it. Where to invest?,reaction,pre-labelled
+"Organic, like a sack of bacteria or something. I'm no scientist, just really high.",hot_take,pre-labelled
+Go watch eXistenZ :),reaction,pre-labelled
+"Immediately, while still high.",reaction,pre-labelled
+Haha exactly what a trip of a movie it is,reaction,pre-labelled
+"I think I took a few extenz once, bought them at a shady gas station bathroom. Gave me a bad headache.",reaction,pre-labelled
+Holy shit I had the exact same thought,reaction,pre-labelled
+Or Lucy.,reaction,pre-labelled
+"Makes me think of the protein coated disc theorized back in 2009
+http://taggedwiki.zubiaga.org/new_content/9b05bff7be5ae41c3af3f44124a8efd9",analysis,"pre-labelled, borderline"
+Ant computers.,reaction,pre-labelled
+Bio-neural gel packs,hot_take,pre-labelled
+"The question specifies ""hardware"" so...
+A cowardly prediction is that current trends will continue. And the current trend is towards less obtrusive hardware.
+So we'll keep on getting big splashy monitors. But just about everything else will continue to get smaller, more built-in and less noticeable.",hot_take,pre-labelled
+In the year 2100 your entire house will be a monitor and your GPU will be the size of a lentil,hot_take,pre-labelled
+We'll probably move to ARM based components. No more x86 chips like the ones we have today,hot_take,pre-labelled
+"To add on to this, I think the end point is that eventually the phone replaces all compute devices. They've been trying for ages to crack the ""dockable"" smartphone that seamlessly transforms from mobile to stationary workstation. With ARM finally starting to make headway into the laptop and workstation markets we might actually see it soon",hot_take,pre-labelled
+"Unless they can invent a phone screen that turns into a monitor-sized screen when you dock it, then larger devices will always exist. Nobody wants to work on a 6-inch phone when they could be working on a 27-inch monitor.",hot_take,pre-labelled
+"Everything's an app these days and that's only going to continue. PCs using the same processor architecture would make it much easier to port over mobile apps. Might be a ways off though- First we'll need to get most important PC programs and games to run on ARM (perhaps box86 and box64 or similar compatibility layers built into ARM desktop operating systems, and maintained by big tech), or else x86 users won't be willing to switch.",analysis,pre-labelled
+"I'm a little worried about ARM's ability to emulate x86, but the efficiency of ARM far outweighs that one issue for the wide majority, and I'm sure x86 will get comfortable support.",hot_take,pre-labelled
+Is there any use case at all for x86 chips for personal computing devices (once Windows matures on ARM)?,reaction,pre-labelled
+"Smartphones will have better sustained performance, and battery life.
+Portable gaming consoles like steam deck will get a lot better.
+Desktops will be the same, with better specs.",hot_take,pre-labelled
+"Over the past 40-45 years, like from the time the IBM PC was introduced until now, there isn't a tremendous amount of change in the basics. Case, power supply, motherboard with CPU socketed, drive bays, ports to connect peripherals, slots to add interface cards.
+Now memory is swappable on the motherboard rather than through expansion cards, more peripherals are wireless, and of course we use different interface protocols for everything, but the basics are still there. I think those same basics could persist for another 40-45 years. There's not much that's making it obsolete.
+Running software and storing data on the cloud are the only real new things, kind of a throwback to terminals connecting to mainframes, and that's useful for some applications. As it is we rely on remote software through websites without even thinking about it, like whenever you google something. But I think there will remain performance-sensitive applications, like games, where local processing with high data bandwidth within the computer favor more conventional PCs.",analysis,pre-labelled
+"Single chip. No upgrades, no choice. It's gonna be apple iPhones all the way down.",hot_take,pre-labelled
+"We already have these and since most people don't really care, it's happening quite a lot.",hot_take,pre-labelled
+A real holodeck,hot_take,pre-labelled
+"In the immediate future in the consumer space there is a trend toward SoC (system on a chip) based systems where the CPU, GPU, and even sometimes RAM are included in the CPU package and are non-independently-upgradeable. This is especially the case for laptops, but apple is even moving in this direction for their laptops. Eventually we'll see decently capable machines where the motherboard doesn't handle much more than power management and external IO.
+The workstation space has been trending toward machines that are more capable but less expandable. The segment of the market referred to as HEDT (high end desktop) has been mostly abandoned, in favor of cheaper hardware geared more toward the general user or superuser rather than enthusiasts and special purpose users (folks like music producers or simulation gamers who have use for large numbers of PCI express lanes.
+The datacenter space is moving toward higher core count CPUs with more aggressive cooling to make better use of rack space. Some systems are beginning to be built toward AI workloads, which rely on very high PCIE bandwidth to support multiple NPUs. ""Blade center"" style enclosures seem to be falling out of favor in many environments as the cost savings on this approach has disappeared.",analysis,pre-labelled
+"There are options:
+We can switch up materials and keep packing computational power as we do now. Boring stuff, will look the same.
+We will switch to photonic computers instead of electronic, so along with electric conductivity we will have light conductivity. I imagine that this hardware will be more crystals or fiber optics than chips. Also RGB lights synced with CPU frequency, for extra epileptic potential.
+We will have organic hardware. It will probably be ugly as fuck, packed in sealed containers. Or maybe it will be made to resemble plants, who knows.
+Our hardware will become compact to the point of it being implantable into our clothing and bodies. We will be the hardware.",hot_take,pre-labelled
+Organic hardware?,hot_take,cold
+"I remember reading about the concept, yes. It is supposed to rely on the same chemistry that our DNA uses. Since chemical reactions happen across the entire volume of the mixture, such a computer would be very effective at parallel computations or trying all possible combinations.
+However, even at a concept level there were big issues, mainly ""how do we quickly do another computation after we mixed and reacted our current stuff?""",analysis,pre-labelled
+The gpu is longer than the motherboard,analysis,cold
+that's already the case if you use an older motherboard,reaction,pre-labelled
+"The ATX standard has been a thing for 30 years, so it would have to be a really old motherboard lmao
+Also my motherboard is already smaller than my GPU.... We are beyond that",analysis,pre-labelled
+"was gonna say, some of the bigger TIs and RTXs are larger than an ATX already. My 4070 is already rivaling my mobo and expecting the next to dwarf it.",analysis,"pre-labelled, borderline"
+Lots more wearable items.,hot_take,pre-labelled
+"It’ll be pretty flexible to most form factors (including nano), because we’re going to continue storing all of our data off-premises.
+We’ll solve for cost and security concerns with cloud-based infrastructure. The only reason we still have on-premises data centers/networks is because there’s more latency with cloud.
+Storage will essentially be free, and compute will be a universal currency.",hot_take,pre-labelled
+"I'm sure there will be multiple different implementations:
+anything outside the body,.. will have to interface somehow with our human body limitations (eyes can only see certain wavelengths, ears can only hear certain frequencies, etc),. .things like ""VR glasses"" still have to physically fit your face,.. so there would be some inherent limitations there.
+anything inside the body (brain implants etc),.. as far as I know still has problems being upgraded and or power and bodily-rejection.
+CPU's and AI and etc will continue to get ""smarter"".. but all that ""smarts"" is only as good as what we use it for. Are we going to use it to solve homelessness and help lift people up from the bottom ?.. or are we just going to use it to continue to advertise celebrity vacation houses and the latest soda-flavor or video game ?",hot_take,pre-labelled
+since we are reaching the limits in electrical signal computing(basically a gate that lets electrons pass through or not to represent 1s and 0s) light computing seems like the right move foward,hot_take,pre-labelled
+Light computing sounds like a meal item. Light computing with salad dressing.,reaction,pre-labelled
+"Post January 20th, a lot more expensive.",hot_take,pre-labelled
+January 20th? Trump thing? I'm not American.,reaction,pre-labelled
+"Yep, we're expecting new tariffs on foreign made goods, driving prices up.",hot_take,pre-labelled
+"Biomechanically integrated
+Maybe not as bad as Deus Ex or Alita. Maybe worse.",hot_take,pre-labelled
+"A lot like it is now. As brilliant as the Apple M chips are, they're simply a different form of integration.
+But if you have a ""real computer"", thank a gamer. They're keeping the whole thing alive.",hot_take,pre-labelled
+Better,hot_take,pre-labelled
+"How far into the future are we talking? In the next 10 years I don't expect too many fundamental changes. Biggest change is probably going to be GPUs integrating more AI optimisation. On the long term, it's probably hard to predict. It'll depend on what kind of fundamentally new hardware is developed. Do we find (near) room temperature superconductors? How much smaller can we make transistors? Do we transfer to something that isn't bases on transistors?",hot_take,pre-labelled
+"My uneducated, data-free opinion:
+It'll be in massive compute centers colocated with dedicated nuclear power plants throughout the country. The constraint on computing won't be computer hardware design but computer hardware quantity, electrical power, and cooling water.
+Consumer tech will just be whatever minimal hardware it takes to access the AI and feed it all of our data.",hot_take,pre-labelled
+"Cloud based, thin clients in the home super high res augmented reality goggles that are no heavier or bulkier than regular glasses. It's all tech that's already here, just a matter of price and integration.",hot_take,pre-labelled
+Expensive,hot_take,pre-labelled
+☁️,hot_take,pre-labelled
+RAM subscriptions,hot_take,pre-labelled
+"Harder, better, faster, stronger",reaction,pre-labelled
+"even smaller than what we have now, I'm reminded of the video of zooming into a microchip",hot_take,pre-labelled
+You will process less and less locally and more and more in the cloud.,hot_take,pre-labelled
+"Think of electronics without the electronics. Moving electrons from one place to another.
+You don't need conductive wires to transfer data if light can do it. So future electronics will employ much more fiber optic technology than it does currently.
+Quantum computers are still quite a few years off for a typical household consumer. There are still many barriers to building such a thing. But when perfected, it would easily be over a 1000 times more powerful than today's home computers...",hot_take,pre-labelled
+Faster and smaller probably,hot_take,pre-labelled
+"The death of wifi, instead we will have satellite internet everywhere on earth.",hot_take,pre-labelled
+Eventually all of them will be quantum with fiberoptic through all of it. Think Star Trek computers,hot_take,pre-labelled
+"Smaller, faster, less moving parts. Pretty soon you'll have a gaming PC the size of a smart phone. It will get to a point where we could go even smaller but it wouldn't make sense on a consumer level.",hot_take,pre-labelled
+"Screens will be bigger and thinner, towers will be smaller (and may not have any HD, thanks to cloud computing), everything but the power cable will be wireless.
+You'll also going to have to buy separate SSD, CD-ROM and USB drives if you still want to use them and not rely on the cloud.
+Honestly, desktops will be reserved for office jobs, 3D graphic rendering and sophisticated gaming (at least, until mobile graphic power improves significantly); as everything else can be done on your phone or tablet.",hot_take,pre-labelled
+Something like a dumb device with a crazy telecommunications system like quantum teleportation connected to insane quantum computing datacenters that offload all the work instantly.,hot_take,pre-labelled
+"Completely ubiquitous. It'll be in the walls of your house, you won't even know where it is. Your walls will be giant screens that can be wallpaper or displays. You wont have any visual hardware in the house. No wires, no towers, nothing. There wont be a central processor, just a bunch of smaller ones sharing the load and spread out all over your house and workplace.",hot_take,pre-labelled
+Quantum computing seems to be on right track. I would expect we will have absurd amounts of computing power in our home or in our hand.,hot_take,pre-labelled
+"Computer wrench, computer 2x4, computer hammer, computer power drill, computer nails, computer nuts & bolts, etc.",reaction,pre-labelled
+"It'll be twice as fast, and the software will be 4x as slow.",hot_take,pre-labelled
+Implanted into your head. With a small area to recharge at night.,hot_take,pre-labelled
+Chips implanted in our brains. You will be able to have the entirety of the internet in your thoughts,hot_take,pre-labelled
+"Since we're reaching Moore's limit probably a lot of clever shapes and designs with a lot of very very optimized 3d architecture.
+I imagine Ai will have its way with optimizing the design and then computer chips micro architecture probably will end up looking a lot of the vascular system of humans because it turns out thats often optimal",hot_take,pre-labelled
+1000 watt power supplies will become the norm after the next GPU generation or two. We’re basically already there. Gaming PCs pull so much goddamn power nowadays.,hot_take,pre-labelled
+"I forsee an organic implant that connects the Central nerves system into a social media network hybridization between Occulus type hardware and a 5 senses receptive system.
+The matrix is already here.",hot_take,pre-labelled
+Nvidia Jetson Orin is just the beginning,hot_take,pre-labelled
+"It will be effectively a terminal. Monitor, peripherals, and just enough power to remote into some virtual machine somewhere that is your ACTUAL computer.",hot_take,pre-labelled
+Optical chipsets are the future.,analysis,cold
+It will probably be colder.,hot_take,pre-labelled
+"Hybrid computers. No need to replace the silicone based hardware we've spent so much time perfecting. But, supplementing the process for things like AI and simulation? Hell yeah.
+Edit: I forgot to mention that the hybrid part is contemporary computer hardware combined with quantum hardware.",hot_take,pre-labelled
+"Expensive, i mean: more expensive.",hot_take,pre-labelled
+Everything will be in the cloud. Most of it already is,hot_take,pre-labelled
+"Looking ahead, I think computer hardware will focus on miniaturization and efficiency. Quantum computing might become more mainstream, allowing us to solve complex problems exponentially faster. Additionally, hardware could become more integrated with AI, enabling real-time optimization and adaptability. Sustainability will likely play a big role too, with a push for eco-friendly materials and energy-efficient designs.",hot_take,pre-labelled
+"Do you think future computers will become so advanced that they'll start making decisions for us, like choosing what to eat or who to date? And if so, how do we unplug them if they disagree?",reaction,pre-labelled
+Home quantum PCs inadvertently teleporting to a parallel universe.,reaction,pre-labelled
+Dustier computer hardware,reaction,pre-labelled
+"SOCs, everything is going to be soldered on the motherboard. Companies hate it when consumers have the ability to swap out components as needed. They want you to replace the entire machine. Its more profitable for them.",hot_take,pre-labelled
+Overpriced.,hot_take,pre-labelled
+AI will take over,hot_take,pre-labelled
+Keyless keyboard,hot_take,pre-labelled
+Cloud based,hot_take,pre-labelled
+"Memory-centric computing or some other new paradigm is necessary to make local AI powerful and efficient enough. So something like memristors possibly. Maybe optical electronics will be possible.
+Interconnect will be optical. I am picturing something slightly inspired by Superman's frozen hideout with the shards of ice or whatever they were. But shard computing for home servers. They are glass shards with electronics and liquid cooling built into them arranged in a tree which you can easily expand. On each branch is something like a memristor based subcluster.
+But what people generally interact with is mixed reality glasses that have very tiny computers built in to them and use super fast wifi to talk to the home shard servers. Screens, 3d objects, coworkers and AI are overlayed into your location. You can use gestures or haptic rings and bracelets to interact.
+Within X decades there will be useful brain computer interfaces that provide new types of very high bandwidth input.
+There may also eventually be swarms of ""smart matter"" nanobots that can appear to enable telekinesis or manifest as humanoid beings.
+Robots with embedded computers will be everywhere. Many of them will look exactly like people.",hot_take,"pre-labelled, borderline"
+"Not fully owned by the consumers. Maybe like a terminal* to access things in your corporation's of choice cloud environment for a subscription.
+*you'll still need to upgrade every 2 years for security reasons or whatever",hot_take,pre-labelled
+"Just very thin clients, everything with be decentralised and all the heavy lifting done remotely as a global high speed wireless networks will be fast enough to manage the huge amounts of data.",hot_take,pre-labelled
+advanced,hot_take,pre-labelled
+i think vr glasses / implant or other wearable computer would be very popular in the future.,hot_take,pre-labelled
+"I'm inclined to agree with the thin client notion others have expressed here, but in a somewhat different context. I foresee a long-term trend of virtualization in computing driven by the trend toward a Fourth Industrial Revolution accelerated by resilience imperatives compelled by climate impacts and the imperative to greater sustainability through the elimination of speculative production. And so I foresee the emergence of freely scalable, modular, dynamic gate array processing devices tracing their lineage back to Field Programmable Gate Arrays and the 'reconfigurable computing' based on them used for science applications and now being realized in so-called 'neuromorphic' and 'memristor' devices. Having properties of processors and memory together, the performance of these devices will be a function of array scales and the parallelism they allow rather than a competition of clock speeds. The premise behind the adoption of such devices will be the cultivation of supply chain resilience through increasingly ubiquitous and local production capability for these broadly multipurpose, lower tolerance, lower speed, lower power yet still high performance devices, eliminating the geographic and corporate production hegemonies of conventional microprocessors that will become an increasing liability as climate impacts worsen. The result will be a class of freely scalable computers with largely generic hardware and flexible architectures that exist in software. These, in turn, will increasingly merge functionality with communications hardware based on the same technology leading to a progressive merging of processing and communications infrastructure.
+Put simply, we are looking at computers of much simpler, more generic hardware design using a smaller diversity of more multipurpose, ubiquitously produced, components as their architectures are virtualized as software. And with time these will increasingly become unseen parts of municipal communications infrastructure instead of sitting in homes and offices, except where certain facilities/users have some need for a high concentration of local processing power and storage under more independent management. Thus a trend in simpler mobile front-end user devices needing less on-board computing power and mass storage.
+Along with this will develop P2P application platforms evolving from P2P/Decentralized web hosting and again motivated by resilience imperatives, the elimination of commercial client-server service hegemonies (with their increasingly plain pathological social influence), and the increasing community adoption of mesh-like telecommunications (with the decline of corporate telecom), leading to the realization of a virtual cloud computing environment where software and stored data exists online as encrypted entities independent of specific processing hardware distributed across peer networks managed on commons principles. In effect, the entire Internet will begin to function as a collective distributed virtual cloud computer spread across a global network commons of peer processing/storage nodes, increasingly embedded into the municipal telecom infrastructure and where user data environments, web sites, and applications exist as virtually indestructible (inadvertently) perpetually running software independent of any particular host computer.
+Much more near-term, the dominant concern in computer hardware design will soon become adaptation to imminent plastics moratoriums and resource shortages with the use of alternative materials, the sustainability convention of Repair>Reuse>Repurpose>Recycle, and adaptations to localized independent production through Open Source technology and design as, again, compelled by resilience imperatives as well as part of a growing cultural backlash against corporatism and neoliberal economic exploitation through the emergence of a Global Swadeshi movement. There is an emergent class of goods whose designs are not owned or rather commons, intended for independent local production as a way to insure survival and living standards in times of emergency, but also as an antidote to the pathological dependencies --the ills of consumerism and colonialism-- fostered by the market economy's products. We are seeing people increasingly considering the underlying ethics of the products they choose and use as a function of how and where they are made as well as what they are made out of and how their use impacts society. And so some conscientious people are choosing simpler, lower-tech, less complex products with more open design on ethical grounds, questioning the quality-of-life gains and societal benefits forever promised by the pursuit of the cutting edge and forever new.
+What this all means for computer design is more use of Open Source technology without exclusive component supply sources, a return to the 'PC clone' based on generic components and its expansion into the broader range of computing, electronics, and appliances, more use of materials like metal, wood, pressboard, and ceramics replacing plastics, and simpler, perhaps somewhat bulkier, designs favoring mechanical assembly intended to facilitate smaller scale lower-tech production, much easier repair, much easier recycling, and a greater basic durability for a longer use-life with greater return on resource investment. No more blobjects!
+The Post-Industrial future is a place where most goods are made on-demand, near where you live if not in your own home, using designs globally distributed online, eliminating the wastes of speculative production and the long-distance transport of elaborately packaged bulky fragile finished goods. To facilitate this paradigm, most goods will need to be redesigned to accommodate this mode of production and the factoring out of production methods needing excessive facility scales, heavily polluting industrial processes, and vast pools of capital investment. And society itself will need to become more industrially and agriculturally literate, ending the pathology of social Taylorism and the dependencies it fosters. More people will need to know how to make, grow, and repair more things for themselves and their neighbors. This is not too difficult for most goods defining our standard-of-living which are, already, predominantly produced in job shops rather than the old fashioned factories of the past. But it will be more of a challenge for electronics and computing products with sophisticated production processes and where engineering knowledge must be encoded into the topologies of modular component standards to reduce skill in production and service. (as was the key virtue of the PC design and reason for its revolutionary rate of adoption and improvement)
+But the disruptions of climate impacts and delayed adaptation may also bring some unusual design trends due to limited availability of certain components. Flat panel displays are particularly subject to geographic supply hegemonies and may be resistant to production localization. And so supply chain disruptions caused by climate impacts may create chronic shortages for these now crucial components, compelling development of more easily fabricated alternatives. This is particularly problematic for mobile devices and we could see more reliance on e-ink displays or the emergence of a new class of sound/voice based mobile computers as a result, as their hardware would be much cheaper and easier to produce everywhere. Basically, mobile computers reduced to displayless hands-free devices the size of the old iPod with a Bluetooth headset and perhaps a subvocal speech collar as a user interface. This could lead to the advent of hands-free computing and a kind of digital telepathy where instant messaging is replaced by 'party lines' of silent subvocal conversation.",hot_take,"pre-labelled, borderline"
+Quantum CPU,hot_take,pre-labelled
+Not necessarily. Quantum computers are quite different from standard computers. Both have their strengths and drawbacks but I don't think quantum computers can run Fallout New Vegas any better than a modern gaming machine.,hot_take,pre-labelled
+"Oh I know this one!
+.........better.",reaction,cold
+Someone in my family works at Apple and I have epilespy. I’ve worked with them on some stuff but didn’t sign a NDA but let’s just say a lot of good health related stuff is gonna come out,reaction,pre-labelled
+"Shitty.
+Once all companies producing computer parts merge into one giant monopoly, power of the PC will drop down back to year 2000 levels while prices will stay the same or higher as they are now.",hot_take,pre-labelled
+"Lag on online games is usually the result of a poor/slow connection on the client's end. Presumably, if this is ever going to happen, there will first have to be improvements in internet infrastructure and wifi to make it faster and more reliable for users.",hot_take,pre-labelled
+"Every ""online"" game I can think of is installed locally and most processing is done in your personal PC. That's an entirely different architecture.",hot_take,pre-labelled

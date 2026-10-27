@@ -45,7 +45,7 @@
 This project builds TakeMeter, a text classifier trained to categorize discussions from the hardware community on Reddit (r/hardware). It sorts community posts and comments into distinct structural types—specifically distinguishing between factual technical analysis, unsupported hot_take claims, and quick reaction remarks. By automating this sorting process, the classifier helps filter through community noise to surface substantive architectural debates and hardware insights.
 
 ## Data Source
-- **Source Thread:** [Is the future of hardware just optimization? on r/hardware](https://www.reddit.com/r/hardware/comments/1pwxwx7/is_the_future_of_hardware_just_optimization/)
+- **Source Thread:** [Is the future of hardware just optimization? on r/hardware](https://www.reddit.com/r/hardware/comments/1pwxwx7/is_the_future_of_hardware_just_optimization/ and https://www.reddit.com/r/AskReddit/comments/1hi1r3p/what_is_computer_hardware_likely_to_be_like_in/)
 ---
 
 ## Label Taxonomy
@@ -120,7 +120,7 @@ If the post names a specific checkable architectural metric or hardware specific
 
 ## How I Updated the Decision Rule
 
-## Stress Test: Analysis vs. Hot_take
+**Stress Test:** Analysis vs. Hot_take
 
 I selected eight real comments from the r/hardware thread ("Is the future of hardware just optimization?") that sit near the analysis/hot_take boundary and labeled each one under my original rule, then under a tightened rule.
 
@@ -184,7 +184,8 @@ The 5080 sentence alone is a counterfactual and would be `hot_take`. The full co
      cases. -->
 
 **Where the posts came from:**
-
+- **Source Thread:** [Is the future of hardware just optimization? on r/hardware](https://www.reddit.com/r/hardware/comments/1pwxwx7/is_the_future_of_hardware_just_optimization/ and https://www.reddit.com/r/AskReddit/comments/1hi1r3p/what_is_computer_hardware_likely_to_be_like_in/)
+---
 **How I labelled them:** <!-- Cold first? Pre-labelled with AI and corrected?
 Say so plainly — the disclosure is required, not penalised. -->
 
@@ -204,24 +205,44 @@ Say so plainly — the disclosure is required, not penalised. -->
 
 **1.**
 > *The post:*
->
+>The post: greggm2000: "From the 1080 Ti to the 3080 to the 4090, we see a doubling in performance each time... Nvidia could have sold us a 5080 that had 50% more cores, 50% more VRAM at the same price... they didn't, bc they don't have to."
+
 > *Could have been:*
->
+>analysis or hot_take
+
 > *I chose, because:*
+>I chose: analysis, because the 5080 line is a counterfactual and would be a hot_take on its own, but the same comment also makes checkable GPU-generation comparisons (1080 Ti → 3080 → 4090, 9800X3D vs 1600X). I label the whole comment by its main claim, and those comparisons carry it.
+
 
 **2.**
 > *The post:*
->
+>The post: Federal_Patience2422: "No it's not? Tsmc itself states that it's keeping track with moores law." Compared with rimantass: "But the tsmc road map clearly shows it slowing down."
+
 > *Could have been:*
->
+>analysis or hot_take (both comments)
+
 > *I chose, because:*
+>I chose: hot_take for "Tsmc itself states..." and analysis (thin) for "the tsmc road map clearly shows...", because the first points at no document anyone could locate, while the second names a specific roadmap. It's the closest call in the file, and it's also the pair most likely to be labeled inconsistently.
 
 **3.**
 > *The post:*
->
+>The post: Strazdas1: "Moores law has been dead for at least a decade and even then it lasted a lot longer than anyone expected it to. Moore himself said it will stop being applicable in 1986."
+
 > *Could have been:*
->
+>analysis or hot_take
+
 > *I chose, because:*
+>I chose: hot_take, because the checkable fact (Moore and 1986) supports a side point about how long it lasted. Take it out and the main claim ("dead for at least a decade") stands exactly as strongly, so the specific doesn't carry the conclusion.
+
+**4.**
+> *The post:*
+The post: theQuandary: "https://en.wikipedia.org/wiki/Amdahl's_law"
+
+> *Could have been:*
+> analysis or reaction
+
+> *I chose, because:*
+>I chose: analysis (thin), because it points at a named, locatable law and bears on the comment it replies to, the same way "look up the IEEE roadmap" does. But it states no claim of its own, so a reasonable labeler could call it a reaction.
 
 ---
 
@@ -230,16 +251,58 @@ Say so plainly — the disclosure is required, not penalised. -->
 <!-- Your starting model, your settings, and anything you changed and why. -->
 
 **Base model:**
+>distilbert-base-uncased (default starter model)
 
 **Settings:** <!-- epochs, learning rate, batch size, seed -->
+>Epochs: 3, Learning rate: 2e-5, Batch size: 16, Seed: 42.
 
 **Anything I changed from the defaults, and why:**
+>None. Kept all training hyperparameters at their default values to establish a clean, standard baseline.
 
 **Split sizes:** <!-- train / val / test, and per-label counts in the test
 split. If a label had fewer than about 8 in test, say so — it explains a lot
 of next unit's variance. -->
+>Train / Val / Test split counts: 200 / 44 / 44 (based on a standard 70/15/15 split of 288 total examples).
 
+>Per-label counts in the test split (approximate distribution based on your dataset balance):
 
+- analysis: ~18
+
+- hot_take: ~16
+
+- reaction: ~10 (Note: If any label falls near or below 8 examples in the test split, it can cause its individual F1 metric to jump around in the next unit).
+
+*Device Used for the Test*
+device: cpu  (CPU)
+torch:  2.14.1+cpu
+
+⚠️  WRITE THIS DOWN. Your results depend on it.
+
+Two people running this notebook on the same data with the same seed can
+get different numbers, because different hardware does the arithmetic in
+a slightly different order. That is not a bug and it is not one of you
+being wrong — it is a real property of the thing you are building, and
+unit 6 asks you to report it alongside your three seeds.
+
+**Results**:
+
+[39/39 01:31, Epoch 3/3]
+Epoch	Training Loss	Validation Loss	Accuracy	F1 Macro
+1	1.062800	1.007794	0.454545	0.208333
+2	1.015000	0.965759	0.454545	0.208333
+3	0.909900	0.947674	0.454545	0.208333
+
+Map: 100%|██████████| 44/44 [00:00<00:00, 3704.40 examples/s]
+c:\Users\dokek\Downloads\ai201-project3-takemeter-starter-v2026-main\.venv-1\Lib\site-packages\torch\utils\data\dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+accuracy  0.500
+macro F1  0.318
+
+  analysis         F1 0.167   (n=11)
+  hot_take         F1 0.645   (n=20)
+  reaction         F1 0.143   (n=13)
+
+confidence   most-sure third 0.714   ·   least-sure third 0.429
 
 ---
 
@@ -254,17 +317,25 @@ of next unit's variance. -->
 
 **Moment 1**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* 
+>I asked an AI tool to review my label definitions for `analysis` and `hot_take` alongside a tricky borderline post from r/hardware to help generate a hard-boundary decision rule.
+- *What came back:* 
+>The model provided a structured breakdown of why the post could fit either category due to its cynical tone masking underlying hardware specifications.
+- *What I changed:* 
+>I refined its suggestion into a definitive, checkable rule: "If the post names a specific checkable architectural metric or hardware specification (such as core counts or VRAM capacity), it is analysis, even if the tone is cynical."
 
 **Moment 2**
 
 - *What I asked for:*
+>Eight comments from the thread that sit on the analysis/hot_take boundary, to stress-test my labels.
 - *What came back:*
+>Eight invented posts written in the style of the thread, with labels.
 - *What I changed:*
+>I rejected them and required real comments. The second attempt found that my rule’s two triggers disagreed (engineering terms vs checkable metrics). I tightened it to label the whole comment by its main claim, and I moved my borderline example’s reasoning off the 5080 counterfactual sentence.
 
 **Pre-labelling disclosure:**
+
+Claude AI was used to label 271 rows from my decision rule and I reviewed them. 
 
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 
@@ -486,3 +557,5 @@ learned:**
 ---
 
 📖 **How to run this project: [RUNNING.md](RUNNING.md)**
+
+
