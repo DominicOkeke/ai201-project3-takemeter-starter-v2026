@@ -346,8 +346,22 @@ Claude AI was used to label 271 rows from my decision rule and I reviewed them.
 
 ## Baseline vs. Trained
 
+Before I look at your trained model:
+
+> The trained model will outperform the baseline on nuanced 'analysis' posts because fine-tuning helps capture subtle technical citations and architectural metrics that zero-shot general prompts misinterpret
+
 <!-- Both models on the same posts. `python baseline.py --trained results.json`
      prints this table for you. -->
+
+
+Device set to use cpu
+accuracy  0.341               
+macro F1  0.325
+
+  analysis         F1 0.391   (n=11)
+  hot_take         F1 0.250   (n=20)
+  reaction         F1 0.333   (n=13)
+
 
 | Measure | Baseline | Trained | Difference |
 |---|---|---|---|
@@ -355,6 +369,20 @@ Claude AI was used to label 271 rows from my decision rule and I reviewed them.
 | Macro F1 |  |  |  |
 | F1 — `label_one` |  |  |  |
 | F1 — `label_two` |  |  |  |
+
+
+| Measure | Baseline | Trained | Difference |
+|---|---|---|---|
+| Overall accuracy | 0.341 | 0.500 | +0.159 |
+| Macro F1 | 0.325 | 0.318 | -0.007 |
+| F1 — `analysis` | 0.391 | 0.167 | -0.225 |
+| F1 — `hot_take` | 0.250 | 0.645 | +0.395 |
+| F1 — `reaction` | 0.333 | 0.143 | -0.190 |
+
+
+
+
+
 
 **What I predicted before I looked:**
 <!-- Milestone 1 asks you to write this BEFORE seeing the trained numbers. A
