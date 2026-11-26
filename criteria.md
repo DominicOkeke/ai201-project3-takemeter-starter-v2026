@@ -121,3 +121,10 @@ whether you hit them:
      A number you missed stays where it is, gets diagnosed, and gets a fix
      attempted. That's where the points are.
      ───────────────────────────────────────────────────────────────────────── -->
+---
+
+### Milestone 2 Baseline Notes (Three Seeds: 42, 7, 2024 on `cpu`)
+- **Overall accuracy:** `0.500` (Seed 42), `0.455` (Seed 7), `0.477` (Seed 2024) — spread `0.045` across seeds.
+- **Macro F1:** `0.318` (Seed 42), `0.208` (Seed 7), `0.291` (Seed 2024) — spread `0.110`.
+- **Per-label F1:** `analysis` (`0.167`, `0.000`, `0.000`), `hot_take` (`0.645`, `0.625`, `0.623`), `reaction` (`0.143`, `0.000`, `0.250`).
+- **Targets remain unchanged:** Per the `criteria.md` rules, missed targets stay as written and are diagnosed and addressed in Milestones 4–6 rather than lowered.
