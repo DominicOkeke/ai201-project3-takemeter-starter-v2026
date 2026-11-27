@@ -1,0 +1,38 @@
+{
+  "compared": 30,
+  "agreed": 24,
+  "agreement_rate": 0.8,
+  "disagreements": [
+    {
+      "text": "I tracked sleep against session quality for eleven weeks. Under seven hours the next day's intervals were 6-8 seconds per mile slower, every time bar one. Small sample, one runner, but it's consistent enough that I've stopped scheduling hard days after late shifts.",
+      "staff": "analysis",
+      "mine": "hot_take"
+    },
+    {
+      "text": "Marathon training plans are all the same plan with different fonts.",
+      "staff": "hot_take",
+      "mine": "analysis"
+    },
+    {
+      "text": "Every injury thread on this forum is the same injury and the same three replies.",
+      "staff": "hot_take",
+      "mine": "analysis"
+    },
+    {
+      "text": "Got up at 5, drove ninety minutes, and it's cancelled. Standing in the car park in the rain reading the email.",
+      "staff": "reaction",
+      "mine": "hot_take"
+    },
+    {
+      "text": "Wind was so bad on the out section I was leaning at about 20 degrees. Coming back felt like cheating.",
+      "staff": "reaction",
+      "mine": "analysis"
+    },
+    {
+      "text": "Just realised the shoes I set every PB in this year are the ones I bought by accident in the wrong size.",
+      "staff": "reaction",
+      "mine": "hot_take"
+    }
+  ],
+  "staff_posts_not_in_mine": 0
+}

@@ -473,7 +473,7 @@ macro F1  0.325
      data/staff_taxonomy.md, not your own — so every argument below is made
      from those definitions and those decision rules. -->
 
-**Agreement rate:** ___ / 30 = ___%
+**Agreement rate:** 24 / 30 = 80%
 
 <!-- Nobody grades this number. A 60% who argues every disagreement from the
      stated rules beats a 95% who wrote "staff was right" nine times. Several
@@ -496,26 +496,62 @@ macro F1  0.325
      what you did across your own 200. -->
 
 **1.**
-> *The post:*
+> *The post:* "I tracked sleep against session quality for eleven weeks. Under seven hours the next day's intervals were 6-8 seconds per mile slower, every time bar one. Small sample, one runner, but it's consistent enough that I've stopped scheduling hard days after late shifts."
 >
-> *Staff said / I said:*
+> *Staff said / I said:* `analysis` / `hot_take`
 >
-> *My call, and why:*
+> *My call, and why:* `hot_take`: The data is one runner's private numbers, so nobody else can check them, and the definition asks for a "checkable" fact. The writer admits it's a small sample from one person. What they end up asserting is a personal rule of thumb, backed by evidence the reader has to take on trust.
 >
-> *Which pile:*
+> *Which pile:* (a) — the rule covered it and I applied it loosely
 
 **2.**
-> *The post:*
+> *The post:* "Marathon training plans are all the same plan with different fonts."
 >
-> *Staff said / I said:*
+> *Staff said / I said:* `hot_take` / `analysis`
 >
-> *My call, and why:*
+> *My call, and why:* `analysis`: The claim is itself a comparison between plans, and "a named comparison" is on the `analysis` list. It can be checked by laying the plans side by side. The comparison is the whole argument, so it isn't a flourish added to a conclusion the writer had already reached.
 >
-> *Which pile:*
+> *Which pile:* (b) — the rule genuinely doesn't say
+
+**3.**
+> *The post:* "Every injury thread on this forum is the same injury and the same three replies."
+>
+> *Staff said / I said:* `hot_take` / `analysis`
+>
+> *My call, and why:* `analysis`: It makes a specific, countable claim about thread history ("the same three replies") that anyone with access to the forum could check. It's a comparison across threads, and that comparison is all the post says.
+>
+> *Which pile:* (b) — the rule genuinely doesn't say
+
+**4.**
+> *The post:* "Got up at 5, drove ninety minutes, and it's cancelled. Standing in the car park in the rain reading the email."
+>
+> *Staff said / I said:* `reaction` / `hot_take`
+>
+> *My call, and why:* `hot_take`: It doesn't state any feeling. It states events and implies a verdict (this was a waste, or the organizers did it badly) with nothing to back it. A confident implied judgment, offered with no support, matches the `hot_take` definition.
+>
+> *Which pile:* (c) — the rule is ambiguous here and my reading is defensible
+
+**5.**
+> *The post:* "Wind was so bad on the out section I was leaning at about 20 degrees. Coming back felt like cheating."
+>
+> *Staff said / I said:* `reaction` / `analysis`
+>
+> *My call, and why:* `analysis`: It contains a figure ("about 20 degrees") and a specific out-versus-back contrast, which could be checked against weather and course data. Rule 3 says recency doesn't outrank evidence, and the presence of a checkable fact is what decides it.
+>
+> *Which pile:* (c) — the rule is ambiguous here and my reading is defensible
+
+**6.**
+> *The post:* "Just realised the shoes I set every PB in this year are the ones I bought by accident in the wrong size."
+>
+> *Staff said / I said:* `reaction` / `hot_take`
+>
+> *My call, and why:* `hot_take`: It carries an implied general claim, that shoe fit or choice matters less than people think. That claim is offered as an anecdote with nothing supporting it, which is the unsupported-claim pattern, even though the writer never states it. Rule 4's tie-break (pick the label the post spends most of its words on) points the same way, since most of the sentence's clauses relate to that shoe claim.
+>
+> *Which pile:* (c) — the rule is ambiguous here and my reading is defensible
 
 **What the pattern in my disagreements tells me:**
 
-
+I disagreed with staff on 6 of 30 posts, and every disagreement sits on a boundary: 3 on analysis/hot_take, 2 on reaction/hot_take, and 1 on reaction/analysis. Only 1 was a plain case of applying a clear rule loosely (a). The other 5 were gaps or ambiguity in the definitions: 2 where the rule doesn't say what counts as a "named comparison" (b), and 3 where I read personal experience as a claim and not as feeling (c). So my labeling errors come from the boundaries, not from any one label, and mostly from definitions that leave room for reading. That predicts that the model will struggle most on analysis vs hot_take, and that my 200 labels are least consistent on short claims and first-person posts.
 
 ---
 
