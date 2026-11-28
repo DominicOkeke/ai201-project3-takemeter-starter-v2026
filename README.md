@@ -403,11 +403,11 @@ macro F1  0.325
 
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
-| 1. Accuracy vs. checklist (+0.10 all 3 seeds) | ≥ +0.10 over checklist (all 3 seeds) | acc 0.500 | acc 0.455 | acc 0.477 | *(check vs. checklist)* |
-| 2. `analysis` precision & recall (all 3 seeds) | P ≥ 0.75, R ≥ 0.60 (all 3 seeds) | F1 0.167 (n=11) | F1 0.000 | F1 0.000 | MISSED |
-| 3. Cross-thread accuracy (`r/hardware` ↔ `r/AskReddit`) | ≥ 0.60 & within 0.10 of held-out | — | — | — | *(if run)* |
-| 4. Self-agreement & Cohen's κ | ≥ 0.85 (34/40), κ ≥ 0.70 | — | — | — | *(rubric check)* |
-| 5. High-conf. (≥ 0.80) acc & coverage (pooled) | Acc ≥ 0.85, cov ≥ 0.25 (pooled) | — | — | — | *(pooled check)* |
+| 1. Accuracy vs. checklist (+0.10 all 3 seeds) | ≥ +0.10 over checklist (all 3 seeds) | acc 0.500 vs. checklist 0.477 (+0.023) | acc 0.455 vs. checklist 0.545 (−0.091) | acc 0.477 vs. checklist 0.386 (+0.091) | MISSED |
+| 2. `analysis` precision & recall (all 3 seeds) | P ≥ 0.75 and R ≥ 0.60 (all 3 seeds) | P 1.000 (1 prediction) / R 0.091 | P 0.000 (never predicted) / R 0.000 | P 0.000 (never predicted) / R 0.000 | MISSED |
+| 3. Cross-thread accuracy (`r/hardware` ↔ `r/AskReddit`) | ≥ 0.60 & within 0.10 of held-out | H→A 0.255, A→H 0.309 | H→A 0.170, A→H 0.309 | H→A 0.364, A→H 0.309 | MISSED |
+| 4. Self-agreement & Cohen's κ | ≥ 0.85 (34/40), κ ≥ 0.70 | 25/40 = 0.625, κ 0.421 | (one relabel, not per seed) | (one relabel, not per seed) | MISSED |
+| 5. High-conf. (≥ 0.80) acc & coverage (pooled) | Acc ≥ 0.85, cov ≥ 0.25 (pooled) | 0 of 132 pooled predictions ≥ 0.80 (coverage 0.000, accuracy undefined) | (pooled across seeds) | (pooled across seeds) | MISSED |
 
 ### Confusion matrix
 
@@ -433,6 +433,22 @@ macro F1  0.325
 - **Macro F1:** `0.318` (Seed 42), `0.208` (Seed 7), `0.291` (Seed 2024) — spread `0.110`.
 - **Per-label F1:** `analysis` (`0.167`, `0.000`, `0.000`), `hot_take` (`0.645`, `0.625`, `0.623`), `reaction` (`0.143`, `0.000`, `0.250`).
 
+### Criterion 1 — the keyword checklist
+
+The checklist from `criteria.md`, in `checklist.py` (results in `checklist_results.json`). It rebuilds each seed's test split with the notebook's `split_dataset` (stratified 70/15/15, seeds 42 / 7 / 2024; 44 test comments each: 11 `analysis`, 20 `hot_take`, 13 `reaction`) and scores the rules on it:
+
+1. If the comment contains a digit (number or year) or a named product/brand, predict `analysis`.
+2. Otherwise, if it contains a `?` or has fewer than 8 words, predict `reaction`.
+3. Otherwise, predict `hot_take`.
+
+| Seed | Checklist accuracy | TakeMeter accuracy | Gap (needs ≥ +0.10) | Met? |
+|---|---|---|---|---|
+| 42 | 0.477 | 0.500 | +0.023 | No |
+| 7 | 0.545 | 0.455 | −0.091 | No |
+| 2024 | 0.386 | 0.477 | +0.091 | No |
+
+**Disclosure:** I wrote the checklist after training, not before as `criteria.md` planned. I took the rules straight from the criterion and fixed them once, including the 8-word "very short" cutoff and the brand list, before scoring. I did not tune them against any test split and ran no threshold sensitivity check. The test counts per label match the confusion-matrix row totals from the training run, which confirms the splits are the same ones the model was scored on.
+
 
 
 ---
@@ -444,11 +460,13 @@ macro F1  0.325
 
 | # | Criterion | Target | Verdict | How I decided |
 |---|---|---|---|---|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
-| 4 |  |  |  |  |
-| 5 |  |  |  |  |
+| 1 | Accuracy beats the keyword checklist by ≥ 0.10 (all 3 seeds) | ≥ +0.10 over checklist on all 3 seeds | MISSED | The gaps were +0.023 / −0.091 / +0.091, so no seed reached +0.10, and on seed 7 the checklist beat the model outright. Closest was seed 2024, 0.009 short. The model's accuracy is just the `hot_take` majority rate (it predicts `hot_take` for almost everything), while the checklist's accuracy swings with each split. The checklist was written after training (see below). |
+| 2 | `analysis` precision and recall (all 3 seeds) | P ≥ 0.75 and R ≥ 0.60 on all 3 seeds | MISSED | Recall was 0.091 / 0.000 / 0.000 against 0.60, so the target fails on every seed whatever the precision was. Precision was 1.000 on seed 42 but from a single `analysis` prediction, and 0.000 on seeds 7 and 2024 because the model never predicted `analysis` (all 11 real `analysis` posts in each test split were called `hot_take` or, on seed 42, 1 was caught and 10 went to `hot_take`). |
+| 3 | Cross-thread accuracy (`r/hardware` ↔ `r/AskReddit`) | ≥ 0.60 in both directions and within 0.10 of normal held-out accuracy | MISSED | All six runs (3 seeds × 2 directions) fell below the 0.60 floor: hardware→AskReddit 0.255 / 0.170 / 0.364, AskReddit→hardware 0.309 / 0.309 / 0.309. They also fell more than 0.10 below normal accuracy (0.500 / 0.455 / 0.477). On AskReddit the model scored below the 0.552 you get by always guessing `hot_take`. |
+| 4 | Self-agreement and Cohen's κ | ≥ 34 of 40 (0.85) and κ ≥ 0.70 | MISSED | On the 40-comment blind relabel I gave the same label on 25 of 40 (0.625) with κ = 0.421, against 34 and 0.70 needed. The relabel was done about a day or two after the original labels, not the 3+ days the criterion asks for, so the gap would likely be at least as large with more time. |
+| 5 | High-confidence accuracy and coverage (pooled across 3 seeds) | ≥ 80% sure → right ≥ 85% of the time, and that sure on ≥ 25% of comments | MISSED | Of 132 pooled test predictions, none reached 0.80 confidence (the maximum was 0.612, the mean 0.477), so coverage was 0.000 against 0.25 and there was no high-confidence accuracy to score. 63.6% of predictions fell below 0.50 and would have shown "uncertain". |
+
+**The opposite verdict, argued (criterion 1, seed 2024).** The case for MET: on seed 2024 the model got 21 of 44 right and the checklist 17 of 44, a gap of 0.091 against the 0.10 target, so one more correct comment (22 vs 17, a gap of 0.114) would have passed. On a 44-comment test split a single comment moves accuracy by 0.023, so a miss of 0.009 is smaller than the noise in the measurement. I still hold MISSED, because the criterion says the gap must hold on all three seeds and does not allow "close enough". Seed 42 is short by about 0.08 and on seed 7 the checklist actually beats the model (−0.091), so even a generous reading of seed 2024 would not rescue the criterion. A near-pass on one seed of a model that predicts `hot_take` almost every time is noise, not evidence the model learned the labels.
 
 **Diagnoses**
 
@@ -460,6 +478,31 @@ macro F1  0.325
      ⚠️ Use your agreement report as evidence. It is the only instrument you
      have that can tell a LABELLING problem from a MODEL problem, and this
      section is graded on whether you used it that way. -->
+
+**Criterion 1 (checklist +0.10) — missed on all 3 seeds.** The cause is the model, not the checklist. The trained model predicts `hot_take` for almost everything (seed 42: 20 of 20 true `hot_take` right, 1 of 11 `analysis`, 1 of 13 `reaction`), so its accuracy of 0.455–0.500 is roughly the 0.455 you get by always guessing `hot_take`. The checklist swings between 0.386 and 0.545 across seeds, because with 44 test comments one comment moves accuracy by 0.023. So "model beats checklist by 0.10" cannot hold when the model is only at the majority rate and the checklist is allowed to be lucky. Evidence: the confusion matrices and the checklist table above.
+
+**Criterion 2 (`analysis` precision ≥ 0.75, recall ≥ 0.60) — missed on all 3 seeds.** Same cause: the model almost never says `analysis` (1 prediction on seed 42, none on seeds 7 and 2024), so recall is 0.091 / 0.000 / 0.000. This is a mix of too few examples and a hard label pair. Only about 70 of my 288 comments are `analysis`, about 49 of them in `r/hardware`, so roughly 49 land in a 201-comment training split. The agreement check shows it is also a boundary problem. Of my six disagreements with staff, five were piles (b) or (c): the staff taxonomy and mine disagree on what makes a fact load-bearing, and on where a first-person observation like "leaning at about 20 degrees" sits between `reaction` and `analysis`. That is a labelling-rule gap on the `analysis` boundary, and it limits how clean that label can be. It does not explain a recall of 0, though. A model that had learned even a noisy version of the boundary would predict `analysis` sometimes.
+
+**Criterion 3 (cross-thread) — missed in all 6 runs.** In every run the model collapsed onto one label instead of reading the comment, so accuracy simply equals how common that label is in the test thread:
+- Trained on `r/AskReddit`, tested on `r/hardware`: it predicted `hot_take` for all 123 comments on all 3 seeds. Accuracy was 0.309, which is exactly the `hot_take` share of `r/hardware` (38 of 123).
+- Trained on `r/hardware`, tested on `r/AskReddit`: it called most comments `analysis` (129 of 165 on seed 42, 136 on seed 7, 78 on seed 2024). `r/hardware` is my most `analysis`-heavy thread (49 of 123), and `r/AskReddit` has only 21 `analysis` of 165, so accuracy was 0.255 / 0.170 / 0.364.
+
+Training loss supports this. For the 104 `r/hardware` training comments it only fell from about 1.08 to 1.03 over three epochs, against 1.099 for pure chance on three labels. The model had barely started learning. The `r/AskReddit` model, with 140 training comments, got further (validation loss 0.95 to 0.88) but still ended up on the majority label. So this failure is mostly the same one as criteria 1 and 2 (too little data and too few training steps for the model to leave the majority label), not clear evidence of "learned one forum's habits". The split itself also cuts training data to 123 or 165 comments instead of 201, which makes it worse. The test cannot tell the two causes apart until the model first beats the majority rate within one thread. Whether it learned one forum's habits is therefore still untested.
+
+**Criterion 4 (self-agreement) — missed.** This one is a labelling problem, not a model problem, and it matters for every other miss. I changed 15 of 40 labels on a blind relabel, using only my written decision rule. 13 of the 15 involved `hot_take` (9 times old `hot_take`, 4 times new `hot_take`). The flips were:
+- 7 between `hot_take` and `analysis`
+- 6 between `hot_take` and `reaction`
+- 2 between `reaction` and `analysis`
+
+Two clusters stand out in the disagreement list:
+- Short predictions that contain a number or a mechanism, such as "It'll be twice as fast, and the software will be 4x as slow", went from `hot_take` to `analysis`. My rule says a number inside a hypothetical does not count, so this is pile (a), a rule I applied loosely.
+- One- or two-word answers in the prediction threads ("Expensive", "Cloud based") flipped between `hot_take` and `reaction`. The rule does not say how to treat a bare answer, which is pile (b), a gap in the rule.
+
+This matches the agreement report against staff, where five of six disagreements were piles (b) and (c) rather than slips. If I disagree with myself on 37.5% of comments, a classifier cannot be expected to reach 0.75 precision on `analysis`, and some of the model's poor scores reflect noisy labels, not only the collapse onto `hot_take`. Per `criteria.md`, the next step is to tighten the rule for those two clusters and relabel before judging the model again.
+
+**Criterion 5 (confidence) — missed.** The model's confidence is close to the 0.333 you get from a coin-flip over three labels: the mean over 132 pooled predictions was 0.477 and the maximum 0.612. With the model so barely trained (validation loss only about 1.00 down to about 0.95 over three epochs, against 1.099 for chance), it never becomes sure about anything, so coverage at 0.80 is zero and the "right 85% of the time when sure" half of the criterion cannot even be tested. This is the same cause as criteria 1–3, not a separate calibration failure. Retraining here reproduced the saved accuracies exactly (0.500 / 0.455 / 0.477), so the confidence numbers come from the same models that produced the Run Log.
+
+**Fix to attempt in The Improvement:** criteria 1, 2, 3 and 5 share one cause, a model that has not learned to leave the majority label, so one fix serves all of them: more epochs and/or a higher learning rate, possibly class weights, then re-run all five criteria on the same three seeds. Criterion 4 needs its own fix, which is tightening the decision rule for short predictions with a number and for one-word answers, and relabelling those comments, before the model is re-judged. Both attempts go in The Improvement.
 
 
 
