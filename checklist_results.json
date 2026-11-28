@@ -1,0 +1,44 @@
+[
+  {
+    "seed": 42,
+    "n_test": 44,
+    "checklist_accuracy": 0.477,
+    "model_accuracy": 0.5,
+    "gap": 0.023,
+    "passes": false,
+    "test_label_counts": {
+      "hot_take": 20,
+      "reaction": 13,
+      "analysis": 11
+    },
+    "model_n_test": 44
+  },
+  {
+    "seed": 7,
+    "n_test": 44,
+    "checklist_accuracy": 0.545,
+    "model_accuracy": 0.45454545454545453,
+    "gap": -0.091,
+    "passes": false,
+    "test_label_counts": {
+      "hot_take": 20,
+      "reaction": 13,
+      "analysis": 11
+    },
+    "model_n_test": 44
+  },
+  {
+    "seed": 2024,
+    "n_test": 44,
+    "checklist_accuracy": 0.386,
+    "model_accuracy": 0.4772727272727273,
+    "gap": 0.091,
+    "passes": false,
+    "test_label_counts": {
+      "hot_take": 20,
+      "reaction": 13,
+      "analysis": 11
+    },
+    "model_n_test": 44
+  }
+]
