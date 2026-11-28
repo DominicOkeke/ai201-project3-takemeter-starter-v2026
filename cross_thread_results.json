@@ -1,0 +1,100 @@
+{
+  "normal_accuracy_by_seed": {
+    "42": 0.5,
+    "7": 0.45454545454545453,
+    "2024": 0.4772727272727273
+  },
+  "rows": [
+    {
+      "seed": 42,
+      "train": "r/hardware",
+      "test": "r/AskReddit",
+      "n_test": 165,
+      "accuracy": 0.255,
+      "majority_rate_test": 0.552,
+      "predicted_counts": {
+        "analysis": 129,
+        "hot_take": 7,
+        "reaction": 29
+      },
+      "meets_floor_0.60": false,
+      "within_0.10_of_normal": false
+    },
+    {
+      "seed": 42,
+      "train": "r/AskReddit",
+      "test": "r/hardware",
+      "n_test": 123,
+      "accuracy": 0.309,
+      "majority_rate_test": 0.398,
+      "predicted_counts": {
+        "analysis": 0,
+        "hot_take": 123,
+        "reaction": 0
+      },
+      "meets_floor_0.60": false,
+      "within_0.10_of_normal": false
+    },
+    {
+      "seed": 7,
+      "train": "r/hardware",
+      "test": "r/AskReddit",
+      "n_test": 165,
+      "accuracy": 0.17,
+      "majority_rate_test": 0.552,
+      "predicted_counts": {
+        "analysis": 136,
+        "hot_take": 28,
+        "reaction": 1
+      },
+      "meets_floor_0.60": false,
+      "within_0.10_of_normal": false
+    },
+    {
+      "seed": 7,
+      "train": "r/AskReddit",
+      "test": "r/hardware",
+      "n_test": 123,
+      "accuracy": 0.309,
+      "majority_rate_test": 0.398,
+      "predicted_counts": {
+        "analysis": 0,
+        "hot_take": 123,
+        "reaction": 0
+      },
+      "meets_floor_0.60": false,
+      "within_0.10_of_normal": false
+    },
+    {
+      "seed": 2024,
+      "train": "r/hardware",
+      "test": "r/AskReddit",
+      "n_test": 165,
+      "accuracy": 0.364,
+      "majority_rate_test": 0.552,
+      "predicted_counts": {
+        "analysis": 78,
+        "hot_take": 21,
+        "reaction": 66
+      },
+      "meets_floor_0.60": false,
+      "within_0.10_of_normal": false
+    },
+    {
+      "seed": 2024,
+      "train": "r/AskReddit",
+      "test": "r/hardware",
+      "n_test": 123,
+      "accuracy": 0.309,
+      "majority_rate_test": 0.398,
+      "predicted_counts": {
+        "analysis": 0,
+        "hot_take": 123,
+        "reaction": 0
+      },
+      "meets_floor_0.60": false,
+      "within_0.10_of_normal": false
+    }
+  ],
+  "all_pass": false
+}

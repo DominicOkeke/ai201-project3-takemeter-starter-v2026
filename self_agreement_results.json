@@ -1,0 +1,84 @@
+{
+  "n": 40,
+  "agreed": 25,
+  "agreement": 0.625,
+  "kappa": 0.421,
+  "passes": false,
+  "disagreements": [
+    {
+      "text": "Expensive",
+      "old": "hot_take",
+      "new": "reaction"
+    },
+    {
+      "text": "Yep, we're expecting new tariffs on foreign made goods, driving prices up.",
+      "old": "hot_take",
+      "new": "analysis"
+    },
+    {
+      "text": "I'm posting on a 11 year old laptop that has 32 gb of ram. It's not the fastest thing but does web tasks fine. Granted it a was a very beefy laptop for it's time.",
+      "old": "reaction",
+      "new": "analysis"
+    },
+    {
+      "text": "No, it\u2019ll be something cloud based and require a subscription or 10.",
+      "old": "hot_take",
+      "new": "analysis"
+    },
+    {
+      "text": "It'll be twice as fast, and the software will be 4x as slow.",
+      "old": "hot_take",
+      "new": "analysis"
+    },
+    {
+      "text": "seems like that would be a pretty short lived invention, not to mention the dangerous testing phases.",
+      "old": "reaction",
+      "new": "hot_take"
+    },
+    {
+      "text": "Some of the office machines I've seen for sale look more like an industrial cooling unit than an actual computer.",
+      "old": "hot_take",
+      "new": "reaction"
+    },
+    {
+      "text": "And then the home computer hobbyists will still be tinkering away using some form of Linux on bulky personal machines and homeservers to maintain personal control over their own data.",
+      "old": "hot_take",
+      "new": "analysis"
+    },
+    {
+      "text": "They have entirely new nodes coming out every year, what is slowing down? Looks like they are speeding up. Note that the names are marketing and have been for basically 15 years now.",
+      "old": "analysis",
+      "new": "hot_take"
+    },
+    {
+      "text": "That's really cool, though I'd guess it has its limits due to increased thermal load",
+      "old": "reaction",
+      "new": "hot_take"
+    },
+    {
+      "text": "Cloud based",
+      "old": "hot_take",
+      "new": "reaction"
+    },
+    {
+      "text": "I am aware of that, but i\u2019m 100% sure the person I responded to meant 1440.",
+      "old": "reaction",
+      "new": "analysis"
+    },
+    {
+      "text": "Biomechanically integrated Maybe not as bad as Deus Ex or Alita. Maybe worse.",
+      "old": "hot_take",
+      "new": "reaction"
+    },
+    {
+      "text": "I remember reading about the concept, yes. It is supposed to rely on the same chemistry that our DNA uses. Since chemical reactions happen across the entire volume of the mixture, such a computer would be very effective at parallel computations or trying all possible combinations. However, even at a concept level there were big issues, mainly \"how do we quickly do another computation after we mixed and reacted our current stuff?\"",
+      "old": "analysis",
+      "new": "hot_take"
+    },
+    {
+      "text": "Gas stations don\u2019t make money selling gasoline fyi Inflation has caused this fyi. Once a bag of chips hits $7, suddenly it makes sense to buy in bulk",
+      "old": "hot_take",
+      "new": "analysis"
+    }
+  ]
+}

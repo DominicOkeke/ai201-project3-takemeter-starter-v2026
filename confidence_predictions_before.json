@@ -1,0 +1,955 @@
+{
+  "summary": {
+    "n_pooled": 132,
+    "n_high_conf": 0,
+    "coverage_high_conf": 0.0,
+    "accuracy_high_conf": null,
+    "share_uncertain_below_0.50": 0.636,
+    "mean_confidence": 0.477,
+    "max_confidence": 0.612,
+    "per_seed_check_vs_saved_run": [
+      {
+        "seed": 42,
+        "accuracy_now": 0.5,
+        "accuracy_saved_run": 0.5
+      },
+      {
+        "seed": 7,
+        "accuracy_now": 0.455,
+        "accuracy_saved_run": 0.455
+      },
+      {
+        "seed": 2024,
+        "accuracy_now": 0.477,
+        "accuracy_saved_run": 0.477
+      }
+    ],
+    "passes": false
+  },
+  "predictions": [
+    {
+      "seed": 42,
+      "text": "I remember reading about the concept, yes. It is supposed to rely on the same chemistry that our DNA uses. Since chemical reactions happen across the entire volume of the mixture, such a computer would be very effective at parallel computations or trying all possible combinations.\nHowever, even at a concept level there were big issues, mainly \"how do we quickly do another computation after we mixed and reacted our current stuff?\"",
+      "gold": "analysis",
+      "pred": "hot_take",
+      "confidence": 0.4739878177642822
+    },
+    {
+      "seed": 42,
+      "text": "Jesus fuck",
+      "gold": "reaction",
+      "pred": "reaction",
+      "confidence": 0.393921822309494
+    },
+    {
+      "seed": 42,
+      "text": "Very interesting \ud83e\udd14",
+      "gold": "reaction",
+      "pred": "hot_take",
+      "confidence": 0.3953936994075775
+    },
+    {
+      "seed": 42,
+      "text": "Yeah, it's not optimal",
+      "gold": "reaction",
+      "pred": "hot_take",
+      "confidence": 0.4255092144012451
+    },
+    {
+      "seed": 42,
+      "text": "Translation (I think)\nIf n divided by two equals 0, then send a prompt to chatgpt asking it \"what is n divided by two?\" otherwise ask it \"what is 3n+1?\"",
+      "gold": "reaction",
+      "pred": "hot_take",
+      "confidence": 0.4001200199127197
+    },
+    {
+      "seed": 42,
+      "text": "My uneducated, data-free opinion:\nIt'll be in massive compute centers colocated with dedicated nuclear power plants throughout the country. The constraint on computing won't be computer hardware design but computer hardware quantity, electrical power, and cooling water.\nConsumer tech will just be whatever minimal hardware it takes to access the AI and feed it all of our data.",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.6090428829193115
+    },
+    {
+      "seed": 42,
+      "text": "Do you not realise that the naming convention is a load of nonsense now? 2nm and 3nm doesn't correspond to any actual dimension.\nAnd transistor performance isn't just based on scaling down the size.",
+      "gold": "analysis",
+      "pred": "hot_take",
+      "confidence": 0.3989647328853607
+    },
+    {
+      "seed": 42,
+      "text": "A lot like it is now. As brilliant as the Apple M chips are, they're simply a different form of integration.\nBut if you have a \"real computer\", thank a gamer. They're keeping the whole thing alive.",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.49206551909446716
+    },
+    {
+      "seed": 42,
+      "text": "since we are reaching the limits in electrical signal computing(basically a gate that lets electrons pass through or not to represent 1s and 0s) light computing seems like the right move foward",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.43394383788108826
+    },
+    {
+      "seed": 42,
+      "text": "I'm inclined to agree with the thin client notion others have expressed here, but in a somewhat different context. I foresee a long-term trend of virtualization in computing driven by the trend toward a Fourth Industrial Revolution accelerated by resilience imperatives compelled by climate impacts and the imperative to greater sustainability through the elimination of speculative production. And so I foresee the emergence of freely scalable, modular, dynamic gate array processing devices tracing their lineage back to Field Programmable Gate Arrays and the 'reconfigurable computing' based on them used for science applications and now being realized in so-called 'neuromorphic' and 'memristor' devices. Having properties of processors and memory together, the performance of these devices will be a function of array scales and the parallelism they allow rather than a competition of clock speeds. The premise behind the adoption of such devices will be the cultivation of supply chain resilience through increasingly ubiquitous and local production capability for these broadly multipurpose, lower tolerance, lower speed, lower power yet still high performance devices, eliminating the geographic and corporate production hegemonies of conventional microprocessors that will become an increasing liability as climate impacts worsen. The result will be a class of freely scalable computers with largely generic hardware and flexible architectures that exist in software. These, in turn, will increasingly merge functionality with communications hardware based on the same technology leading to a progressive merging of processing and communications infrastructure.\nPut simply, we are looking at computers of much simpler, more generic hardware design using a smaller diversity of more multipurpose, ubiquitously produced, components as their architectures are virtualized as software. And with time these will increasingly become unseen parts of municipal communications infrastructure instead of sitting in homes and offices, except where certain facilities/users have some need for a high concentration of local processing power and storage under more independent management. Thus a trend in simpler mobile front-end user devices needing less on-board computing power and mass storage.\nAlong with this will develop P2P application platforms evolving from P2P/Decentralized web hosting and again motivated by resilience imperatives, the elimination of commercial client-server service hegemonies (with their increasingly plain pathological social influence), and the increasing community adoption of mesh-like telecommunications (with the decline of corporate telecom), leading to the realization of a virtual cloud computing environment where software and stored data exists online as encrypted entities independent of specific processing hardware distributed across peer networks managed on commons principles. In effect, the entire Internet will begin to function as a collective distributed virtual cloud computer spread across a global network commons of peer processing/storage nodes, increasingly embedded into the municipal telecom infrastructure and where user data environments, web sites, and applications exist as virtually indestructible (inadvertently) perpetually running software independent of any particular host computer.\nMuch more near-term, the dominant concern in computer hardware design will soon become adaptation to imminent plastics moratoriums and resource shortages with the use of alternative materials, the sustainability convention of Repair>Reuse>Repurpose>Recycle, and adaptations to localized independent production through Open Source technology and design as, again, compelled by resilience imperatives as well as part of a growing cultural backlash against corporatism and neoliberal economic exploitation through the emergence of a Global Swadeshi movement. There is an emergent class of goods whose designs are not owned or rather commons, intended for independent local production as a way to insure survival and living standards in times of emergency, but also as an antidote to the pathological dependencies --the ills of consumerism and colonialism-- fostered by the market economy's products. We are seeing people increasingly considering the underlying ethics of the products they choose and use as a function of how and where they are made as well as what they are made out of and how their use impacts society. And so some conscientious people are choosing simpler, lower-tech, less complex products with more open design on ethical grounds, questioning the quality-of-life gains and societal benefits forever promised by the pursuit of the cutting edge and forever new.\nWhat this all means for computer design is more use of Open Source technology without exclusive component supply sources, a return to the 'PC clone' based on generic components and its expansion into the broader range of computing, electronics, and appliances, more use of materials like metal, wood, pressboard, and ceramics replacing plastics, and simpler, perhaps somewhat bulkier, designs favoring mechanical assembly intended to facilitate smaller scale lower-tech production, much easier repair, much easier recycling, and a greater basic durability for a longer use-life with greater return on resource investment. No more blobjects!\nThe Post-Industrial future is a place where most goods are made on-demand, near where you live if not in your own home, using designs globally distributed online, eliminating the wastes of speculative production and the long-distance transport of elaborately packaged bulky fragile finished goods. To facilitate this paradigm, most goods will need to be redesigned to accommodate this mode of production and the factoring out of production methods needing excessive facility scales, heavily polluting industrial processes, and vast pools of capital investment. And society itself will need to become more industrially and agriculturally literate, ending the pathology of social Taylorism and the dependencies it fosters. More people will need to know how to make, grow, and repair more things for themselves and their neighbors. This is not too difficult for most goods defining our standard-of-living which are, already, predominantly produced in job shops rather than the old fashioned factories of the past. But it will be more of a challenge for electronics and computing products with sophisticated production processes and where engineering knowledge must be encoded into the topologies of modular component standards to reduce skill in production and service. (as was the key virtue of the PC design and reason for its revolutionary rate of adoption and improvement)\nBut the disruptions of climate impacts and delayed adaptation may also bring some unusual design trends due to limited availability of certain components. Flat panel displays are particularly subject to geographic supply hegemonies and may be resistant to production localization. And so supply chain disruptions caused by climate impacts may create chronic shortages for these now crucial components, compelling development of more easily fabricated alternatives. This is particularly problematic for mobile devices and we could see more reliance on e-ink displays or the emergence of a new class of sound/voice based mobile computers as a result, as their hardware would be much cheaper and easier to produce everywhere. Basically, mobile computers reduced to displayless hands-free devices the size of the old iPod with a Bluetooth headset and perhaps a subvocal speech collar as a user interface. This could lead to the advent of hands-free computing and a kind of digital telepathy where instant messaging is replaced by 'party lines' of silent subvocal conversation.",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.5339767932891846
+    },
+    {
+      "seed": 42,
+      "text": "We are at the tail end of the useful lifespan of regular EUV, front side power delivery, and Fin-FETs. Things suck again just like they did at the tail end of DUV and Planar transitors (anyone else get sick of 28nm? I sure did)\nAs the industry moves to GAA-FETs, backside power delivery, and High NA-EUV. The low hanging fruit will be picked and node progress will look pretty decent again for a while until these too become long in the tooth. Next will be CFETs with a darkhorse potential for TFETs.\nThat\u2019s before even touching on the current trend of disaggregation, 3D stacking, specialized accelerators, or alternatives to silicon as a material. Also TSMC process node names end in N not nm, this is becuase they aren\u2019t measurements, transistors are still over a dozen nm in size, not the 1.4nm you are trying to explain.\nWe are also at the tail end of vertex shaders and DXR1.1, yet many engines have not been rewritten to utilize mesh shaders, let alone work graphs + mesh nodes, or alternatively virtual geometry.",
+      "gold": "analysis",
+      "pred": "hot_take",
+      "confidence": 0.5879185199737549
+    },
+    {
+      "seed": 42,
+      "text": "It will probably be colder.",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.557573139667511
+    },
+    {
+      "seed": 42,
+      "text": "Expensive",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.4275268614292145
+    },
+    {
+      "seed": 42,
+      "text": "Programmers have gotten away with being lazy for far too long. Now they have to actually write efficient code. Oh the horror!",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.48965781927108765
+    },
+    {
+      "seed": 42,
+      "text": "Realy good point.\nBut It is looking like it's slowing down. It used to be 18 months now it's closer to 36.",
+      "gold": "analysis",
+      "pred": "hot_take",
+      "confidence": 0.5302705764770508
+    },
+    {
+      "seed": 42,
+      "text": "RAM subscriptions",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.4232690632343292
+    },
+    {
+      "seed": 42,
+      "text": "Harder, better, faster, stronger",
+      "gold": "reaction",
+      "pred": "hot_take",
+      "confidence": 0.4816952347755432
+    },
+    {
+      "seed": 42,
+      "text": "Asked to leave local gas station for \"tampering\" with that",
+      "gold": "reaction",
+      "pred": "hot_take",
+      "confidence": 0.4217725098133087
+    },
+    {
+      "seed": 42,
+      "text": "And then the home computer hobbyists will still be tinkering away using some form of Linux on bulky personal machines and homeservers to maintain personal control over their own data.",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.5953179597854614
+    },
+    {
+      "seed": 42,
+      "text": "Computer wrench, computer 2x4, computer hammer, computer power drill, computer nails, computer nuts & bolts, etc.",
+      "gold": "reaction",
+      "pred": "hot_take",
+      "confidence": 0.48423340916633606
+    },
+    {
+      "seed": 42,
+      "text": "Cloud based",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.44079798460006714
+    },
+    {
+      "seed": 42,
+      "text": "They have entirely new nodes coming out every year, what is slowing down? Looks like they are speeding up.\nNote that the names are marketing and have been for basically 15 years now.",
+      "gold": "analysis",
+      "pred": "hot_take",
+      "confidence": 0.5186383724212646
+    },
+    {
+      "seed": 42,
+      "text": "Some of the office machines I've seen for sale look more like an industrial cooling unit than an actual computer.",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.5106594562530518
+    },
+    {
+      "seed": 42,
+      "text": "Lots of very interesting things in your comment.\nSo you don't see a slowdown in hardware development?",
+      "gold": "reaction",
+      "pred": "hot_take",
+      "confidence": 0.470890074968338
+    },
+    {
+      "seed": 42,
+      "text": "I think there's a lack of understanding of progressive innovation in dealing with technology going on here.\nI mean , for goodness sakes we have Integrated graphics on processors that are running faster than graphics cards did fifteen years ago. While consumnIng less power and producing less heat.\nThe Christmas card I purchased for my folks that plays little drummer boy has more memory than the space shuttle did , and we're talking by a substantial amount.\nYou can't quantify that you can do more with them but then the gains have slowed down?\nDoesn't doing more directly relate to actually having gains?\nI'm playing a game for fun and it is actively rendering real time , particle physics and lighting. To an extent that even fifteen years ago , the military couldn't even dream of running simulations to that extent.",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.5653123259544373
+    },
+    {
+      "seed": 42,
+      "text": "Expensive, i mean: more expensive.",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.4475352168083191
+    },
+    {
+      "seed": 42,
+      "text": "Leela: \"Didn't you have ads in the 20th century?\"\nFry: \"Well sure, but not in our dreams! Only on tv and radio...and in magazines...and movies. And at ball games, on buses, and milk cartons, and t-shirts, and bananas, and written on the sky. But not in dreams! No sirree.\"",
+      "gold": "reaction",
+      "pred": "hot_take",
+      "confidence": 0.4566499888896942
+    },
+    {
+      "seed": 42,
+      "text": "When you have clowns who believe \"unused RAM is wasted RAM\" and don't know basic programming concepts, no.",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.4278809130191803
+    },
+    {
+      "seed": 42,
+      "text": "It's a fools errand to do this because I can already buy a $200 laptop that will give me zero latency and do most basic things a thin client would do.",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.5208643674850464
+    },
+    {
+      "seed": 42,
+      "text": "The sad thing is, the PC industry started in large part because the people who now run these corporations were against the dumb terminals of the past.\nWe want to help people break free from the control of the corporations. Well, that is until we're the ones running them.",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.5493888258934021
+    },
+    {
+      "seed": 42,
+      "text": "The one from 2024 has been published already, IIRC.\nA possible dark horse would be viable CNTFETs, which have far higher electron speeds and a lower Vdd than silicon or 2D materials. Not only could they run at hundreds of GHz for the same power consumption, but they also seem a match made in heaven for ternary logic.\nAs far as I know, the groundwork for 99.9999...% pure semiconducting CNT and laying them symmetrically on a wafer have been achieved in lab settings already, but who knows how long it'll take to get them to commercial viability.",
+      "gold": "analysis",
+      "pred": "hot_take",
+      "confidence": 0.46274909377098083
+    },
+    {
+      "seed": 42,
+      "text": "temporal gate technology\n...in the process either accidentally opening a portal to Phobos, or causing some sort of resonance cascade kinda thing...",
+      "gold": "reaction",
+      "pred": "hot_take",
+      "confidence": 0.4676685333251953
+    },
+    {
+      "seed": 42,
+      "text": "Bio-neural gel packs",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.43513235449790955
+    },
+    {
+      "seed": 42,
+      "text": "Chromebooks are kinda the first step towards this and they've already been a thing for over a decade. They have a proper (albeit barebones) desktop OS, but it basically just serves to host Google's suite of web apps.",
+      "gold": "analysis",
+      "pred": "hot_take",
+      "confidence": 0.468474805355072
+    },
+    {
+      "seed": 42,
+      "text": "GPUs are riding the max draw because there is a market for the extreme high end and multi GPU is dead for gaming. No matter how efficient things are, some people are still willing to pay for the fastest thing possible. The 5090 isn't pulling 500W to meet some engineered performance target, it's basically the fastest thing Nvidia could make to serve their markets.",
+      "gold": "analysis",
+      "pred": "hot_take",
+      "confidence": 0.4490005075931549
+    },
+    {
+      "seed": 42,
+      "text": "Someone in my family works at Apple and I have epilespy. I\u2019ve worked with them on some stuff but didn\u2019t sign a NDA but let\u2019s just say a lot of good health related stuff is gonna come out",
+      "gold": "reaction",
+      "pred": "hot_take",
+      "confidence": 0.5035187005996704
+    },
+    {
+      "seed": 42,
+      "text": "Yep, we're expecting new tariffs on foreign made goods, driving prices up.",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.5360247492790222
+    },
+    {
+      "seed": 42,
+      "text": "Just very thin clients, everything with be decentralised and all the heavy lifting done remotely as a global high speed wireless networks will be fast enough to manage the huge amounts of data.",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.61212557554245
+    },
+    {
+      "seed": 42,
+      "text": "Hey, thanks for the pointer. Is that the one from 2022? Titled More Moore?",
+      "gold": "reaction",
+      "pred": "hot_take",
+      "confidence": 0.4202597439289093
+    },
+    {
+      "seed": 42,
+      "text": "A real holodeck",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.43555164337158203
+    },
+    {
+      "seed": 42,
+      "text": "Enthusiasts have always made \"good looking\" PCs, it's just that what was \"good\" has changed over time and technology. Even back in the day (2000s), before the mass availability of RGB LEDs, people were putting in cold cathode fluorescent lighting in their cases and UV reactive parts (cable sleeves, fans, coolant). Blue LEDs were all the rage maybe mid-late 2000s? But these people were a very niche group since this often required a lot of DIY. The general uptick in gaming among the general public has also brought what once was enthusiast-only components to mass market (e.g. water cooling, lighting) in a plug and play format.\nToday, there is a big focus on RGB to stand out, but you could argue that all this RGB aesthetic will be looked back as fondly as molded chromed plastic",
+      "gold": "analysis",
+      "pred": "hot_take",
+      "confidence": 0.41501033306121826
+    },
+    {
+      "seed": 42,
+      "text": "It's kinda long so I'll give you the Cliff Notes version:\nYes, this is a pseudocode snippet that seems to describe a decision-making process for interacting with ChatGPT, based on whether a number n is even or odd. Here's an explanation:\nPseudocode Breakdown: Condition: if (n % 2 == 0): This checks if n is an even number (remainder is 0 when n is divided by 2). Action if Even: Promptchatgpt(\"what is \" + str(n) + \" divided by 2?\") If n is even, it forms a prompt for ChatGPT asking, \"What is n divided by 2?\" Else (Odd Number): Promptchatgpt(\"what is \" + str(n) + \" times 3 plus 1?\") If n is odd, it forms a prompt for ChatGPT asking, \"What is n times 3 plus 1?\" Purpose This logic might be part of implementing a simple sequence like the Collatz Conjecture (or a similar iterative process). In the conjecture: If n is even, divide it by 2. If n is odd, multiply it by 3 and add 1. It seems the code is designed to generate appropriate ChatGPT prompts based on the value of n.\nMe: How does any human understand these codes? To me about a third of it is gibberish\nYou're not alone in feeling this way\u2014code can seem like gibberish at first! Understanding it is like learning a new language: daunting initially, but it becomes easier with practice and context.\nHere's how people approach making sense of code:\nRecognizing Patterns Code follows specific structures and logic, much like grammar in language. For example: if checks a condition (like asking, \"Is it true that...\"). % means \"remainder when divided by.\" This pattern often checks if a number is even or odd.\nBreaking It Down People dissect code piece by piece: python Copy code",
+      "gold": "analysis",
+      "pred": "hot_take",
+      "confidence": 0.3960537910461426
+    },
+    {
+      "seed": 42,
+      "text": "Moore's law states that cost per transistor goes down by half every 18 months. The new nodes are more expensive per transistor, Moore's law has not just stopped, it has reversed.",
+      "gold": "analysis",
+      "pred": "analysis",
+      "confidence": 0.3982696533203125
+    },
+    {
+      "seed": 42,
+      "text": "Light computing sounds like a meal item. Light computing with salad dressing.",
+      "gold": "reaction",
+      "pred": "hot_take",
+      "confidence": 0.49809783697128296
+    },
+    {
+      "seed": 7,
+      "text": "Just a heads up, the speeds you're seeing advertised from your ISP and Speedtest are in megabits per second (Mbps), not megabytes per second (MB/s). Megabytes are 8 times larger than megabits so the difference is important in the context of Internet connections.\n1.5Gbps is 187.5MB/s. 1.5GB/s is 12Gbps, which is much faster than the vast majority of home Internet connections and networking hardware are capable of delivering.",
+      "gold": "analysis",
+      "pred": "hot_take",
+      "confidence": 0.47627151012420654
+    },
+    {
+      "seed": 7,
+      "text": "Well I mean do you need that many moons really? Oh shoot, accidentally deleted ours.",
+      "gold": "reaction",
+      "pred": "hot_take",
+      "confidence": 0.4328031837940216
+    },
+    {
+      "seed": 7,
+      "text": "Moore's law (observation) was entirely density, not cost. And it was later amended for a longer period. And it hasn't really been true in the literal sense for decades. We are only 5 halvings away from atom sized features now.\nPerformance and performance-per-dollar has been the proxy for a post-literal Moore's world for a long time. Thinks like GPUs have been consistently doubling in those figures about every 2.5 years since the early 2000s.\nNodes increasing in price is definitely a novel thing, and partly to do with extremely high demand rather than a technological limitation.",
+      "gold": "analysis",
+      "pred": "hot_take",
+      "confidence": 0.5055559873580933
+    },
+    {
+      "seed": 7,
+      "text": "The death of wifi, instead we will have satellite internet everywhere on earth.",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.5361660718917847
+    },
+    {
+      "seed": 7,
+      "text": "Free? Maybe. Is anyone actually buying? No.",
+      "gold": "reaction",
+      "pred": "hot_take",
+      "confidence": 0.4433184266090393
+    },
+    {
+      "seed": 7,
+      "text": "was gonna say, some of the bigger TIs and RTXs are larger than an ATX already. My 4070 is already rivaling my mobo and expecting the next to dwarf it.",
+      "gold": "analysis",
+      "pred": "hot_take",
+      "confidence": 0.5079278349876404
+    },
+    {
+      "seed": 7,
+      "text": "Yes, they're pushing the limmits so the costs with each generation is bigger",
+      "gold": "reaction",
+      "pred": "hot_take",
+      "confidence": 0.5099927186965942
+    },
+    {
+      "seed": 7,
+      "text": "Can you speak mandarin?",
+      "gold": "reaction",
+      "pred": "hot_take",
+      "confidence": 0.4496128261089325
+    },
+    {
+      "seed": 7,
+      "text": "I'm sure there will be multiple different implementations:\nanything outside the body,.. will have to interface somehow with our human body limitations (eyes can only see certain wavelengths, ears can only hear certain frequencies, etc),. .things like \"VR glasses\" still have to physically fit your face,.. so there would be some inherent limitations there.\nanything inside the body (brain implants etc),.. as far as I know still has problems being upgraded and or power and bodily-rejection.\nCPU's and AI and etc will continue to get \"smarter\".. but all that \"smarts\" is only as good as what we use it for. Are we going to use it to solve homelessness and help lift people up from the bottom ?.. or are we just going to use it to continue to advertise celebrity vacation houses and the latest soda-flavor or video game ?",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.5077048540115356
+    },
+    {
+      "seed": 7,
+      "text": "No, I don't agree. While we aren't seeing the rate of frequency increase we saw up to the early 2000s, we nevertheless are seeing it, and overall performance increases along with it as well. As to performance per dollar, ofc that is increasing, CPU and GPU both (ofc there are exceptions for corporate greed reasons as much as technical ones). As to \"last legs\", like I said, people have been saying that for a long time, and they've always been wrong (for consumer compute). Problems get solved, that won't be stopping anytime soon.",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.5024321675300598
+    },
+    {
+      "seed": 7,
+      "text": "Asked to leave local gas station for \"tampering\" with that",
+      "gold": "reaction",
+      "pred": "hot_take",
+      "confidence": 0.4233890771865845
+    },
+    {
+      "seed": 7,
+      "text": "How incredibly wrong you are. The fastest the internet can go is the speed of light. It already goes that fast. That means it can\u2019t get any faster. All it can do is increase bandwidth and get marginally better routing.",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.5424184799194336
+    },
+    {
+      "seed": 7,
+      "text": "You and me both :)",
+      "gold": "reaction",
+      "pred": "hot_take",
+      "confidence": 0.4072732627391815
+    },
+    {
+      "seed": 7,
+      "text": "People spent like 2 decades on 8 16 32gb\nNot even sure what you mean by this, but taking you literally, no they didn\u2019t, not even close. If you think consumer PCs had even close to 8GB of RAM in 2005, much less 16 or 32, well, they didn't.",
+      "gold": "analysis",
+      "pred": "hot_take",
+      "confidence": 0.4816235601902008
+    },
+    {
+      "seed": 7,
+      "text": "RPG video game reference?",
+      "gold": "reaction",
+      "pred": "hot_take",
+      "confidence": 0.4277821481227875
+    },
+    {
+      "seed": 7,
+      "text": "Moores law is about density and has nothing to do with cost.",
+      "gold": "analysis",
+      "pred": "hot_take",
+      "confidence": 0.47073695063591003
+    },
+    {
+      "seed": 7,
+      "text": "Regarding your first point about process node progression. While it\u2019s debatable how much the naming means and varies in PPA gains, if you do the maths, from 2nm -> 1.4nm is the same ratio as from 90 -> 65 -> 45 etc. Also in the past we always have half nodes between major nodes.",
+      "gold": "analysis",
+      "pred": "hot_take",
+      "confidence": 0.4801275432109833
+    },
+    {
+      "seed": 7,
+      "text": "Moore's law states that cost per transistor goes down by half every 18 months. The new nodes are more expensive per transistor, Moore's law has not just stopped, it has reversed.",
+      "gold": "analysis",
+      "pred": "hot_take",
+      "confidence": 0.4787787199020386
+    },
+    {
+      "seed": 7,
+      "text": "I think what people forget is that the cost of continuing making Moore\u2019s is going up even faster, and chip companies have found out to implement more functionality into chips so it basically doesn\u2019t matter, and to keep prices at a level people will still be buying (the AI wave is out of reach for small companies and real people as of right now)",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.5073322653770447
+    },
+    {
+      "seed": 7,
+      "text": "Expensive, i mean: more expensive.",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.474709689617157
+    },
+    {
+      "seed": 7,
+      "text": "iPhone release announcement was less than ten years after pentium II release, though it wasn\u2019t released until just over ten years later. And that was already the tail end of dennard scaling.",
+      "gold": "analysis",
+      "pred": "hot_take",
+      "confidence": 0.47547292709350586
+    },
+    {
+      "seed": 7,
+      "text": "10 years ago you couldn't dream of running a 2k gaming display\n10 years ago i was running a 2k gaming display on a GTX 730!",
+      "gold": "reaction",
+      "pred": "hot_take",
+      "confidence": 0.4424460530281067
+    },
+    {
+      "seed": 7,
+      "text": "Moores Law is already dead. Thst doesn't mean progress won't continue, bit it's far slower than Moores Law.",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.49251168966293335
+    },
+    {
+      "seed": 7,
+      "text": "The gpu is longer than the motherboard",
+      "gold": "analysis",
+      "pred": "hot_take",
+      "confidence": 0.4676530063152313
+    },
+    {
+      "seed": 7,
+      "text": "Not fully owned by the consumers. Maybe like a terminal* to access things in your corporation's of choice cloud environment for a subscription.\n*you'll still need to upgrade every 2 years for security reasons or whatever",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.5395926237106323
+    },
+    {
+      "seed": 7,
+      "text": "But the point is still there, isn't it? The current GPUs use more power than whole computers 15 years ago. Of course you can do a lot more with them. But the gains in efficiency have slowed down.",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.5472259521484375
+    },
+    {
+      "seed": 7,
+      "text": "I forsee an organic implant that connects the Central nerves system into a social media network hybridization between Occulus type hardware and a 5 senses receptive system.\nThe matrix is already here.",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.4781648814678192
+    },
+    {
+      "seed": 7,
+      "text": "GPUs are riding the max draw because there is a market for the extreme high end and multi GPU is dead for gaming. No matter how efficient things are, some people are still willing to pay for the fastest thing possible. The 5090 isn't pulling 500W to meet some engineered performance target, it's basically the fastest thing Nvidia could make to serve their markets.",
+      "gold": "analysis",
+      "pred": "hot_take",
+      "confidence": 0.5196560621261597
+    },
+    {
+      "seed": 7,
+      "text": "Moores law has been dead for at least a decade and even then it lasted a lot longer than anyone expected it to. Moore himself said it will stop being applicable in 1986.",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.47641074657440186
+    },
+    {
+      "seed": 7,
+      "text": "I'm posting on a 11 year old laptop that has 32 gb of ram. It's not the fastest thing but does web tasks fine. Granted it a was a very beefy laptop for it's time.",
+      "gold": "reaction",
+      "pred": "hot_take",
+      "confidence": 0.4667644202709198
+    },
+    {
+      "seed": 7,
+      "text": "It will be effectively a terminal. Monitor, peripherals, and just enough power to remote into some virtual machine somewhere that is your ACTUAL computer.",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.5762155652046204
+    },
+    {
+      "seed": 7,
+      "text": "The ATX standard has been a thing for 30 years, so it would have to be a really old motherboard lmao\nAlso my motherboard is already smaller than my GPU.... We are beyond that",
+      "gold": "analysis",
+      "pred": "hot_take",
+      "confidence": 0.49552080035209656
+    },
+    {
+      "seed": 7,
+      "text": "Ant computers.",
+      "gold": "reaction",
+      "pred": "hot_take",
+      "confidence": 0.4998679459095001
+    },
+    {
+      "seed": 7,
+      "text": "Jesus fuck",
+      "gold": "reaction",
+      "pred": "hot_take",
+      "confidence": 0.3977780342102051
+    },
+    {
+      "seed": 7,
+      "text": "It\u2019ll be pretty flexible to most form factors (including nano), because we\u2019re going to continue storing all of our data off-premises.\nWe\u2019ll solve for cost and security concerns with cloud-based infrastructure. The only reason we still have on-premises data centers/networks is because there\u2019s more latency with cloud.\nStorage will essentially be free, and compute will be a universal currency.",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.5558792352676392
+    },
+    {
+      "seed": 7,
+      "text": "Subscribe or die",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.4868350625038147
+    },
+    {
+      "seed": 7,
+      "text": "I think there's a lack of understanding of progressive innovation in dealing with technology going on here.\nI mean , for goodness sakes we have Integrated graphics on processors that are running faster than graphics cards did fifteen years ago. While consumnIng less power and producing less heat.\nThe Christmas card I purchased for my folks that plays little drummer boy has more memory than the space shuttle did , and we're talking by a substantial amount.\nYou can't quantify that you can do more with them but then the gains have slowed down?\nDoesn't doing more directly relate to actually having gains?\nI'm playing a game for fun and it is actively rendering real time , particle physics and lighting. To an extent that even fifteen years ago , the military couldn't even dream of running simulations to that extent.",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.5056033730506897
+    },
+    {
+      "seed": 7,
+      "text": "How far into the future are we talking? In the next 10 years I don't expect too many fundamental changes. Biggest change is probably going to be GPUs integrating more AI optimisation. On the long term, it's probably hard to predict. It'll depend on what kind of fundamentally new hardware is developed. Do we find (near) room temperature superconductors? How much smaller can we make transistors? Do we transfer to something that isn't bases on transistors?",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.5239855051040649
+    },
+    {
+      "seed": 7,
+      "text": "Hey it's free realestate",
+      "gold": "reaction",
+      "pred": "hot_take",
+      "confidence": 0.41079774498939514
+    },
+    {
+      "seed": 7,
+      "text": "I'm a little worried about ARM's ability to emulate x86, but the efficiency of ARM far outweighs that one issue for the wide majority, and I'm sure x86 will get comfortable support.",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.5052282214164734
+    },
+    {
+      "seed": 7,
+      "text": "It's a fools errand to do this because I can already buy a $200 laptop that will give me zero latency and do most basic things a thin client would do.",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.48654523491859436
+    },
+    {
+      "seed": 7,
+      "text": "I'm inclined to agree with the thin client notion others have expressed here, but in a somewhat different context. I foresee a long-term trend of virtualization in computing driven by the trend toward a Fourth Industrial Revolution accelerated by resilience imperatives compelled by climate impacts and the imperative to greater sustainability through the elimination of speculative production. And so I foresee the emergence of freely scalable, modular, dynamic gate array processing devices tracing their lineage back to Field Programmable Gate Arrays and the 'reconfigurable computing' based on them used for science applications and now being realized in so-called 'neuromorphic' and 'memristor' devices. Having properties of processors and memory together, the performance of these devices will be a function of array scales and the parallelism they allow rather than a competition of clock speeds. The premise behind the adoption of such devices will be the cultivation of supply chain resilience through increasingly ubiquitous and local production capability for these broadly multipurpose, lower tolerance, lower speed, lower power yet still high performance devices, eliminating the geographic and corporate production hegemonies of conventional microprocessors that will become an increasing liability as climate impacts worsen. The result will be a class of freely scalable computers with largely generic hardware and flexible architectures that exist in software. These, in turn, will increasingly merge functionality with communications hardware based on the same technology leading to a progressive merging of processing and communications infrastructure.\nPut simply, we are looking at computers of much simpler, more generic hardware design using a smaller diversity of more multipurpose, ubiquitously produced, components as their architectures are virtualized as software. And with time these will increasingly become unseen parts of municipal communications infrastructure instead of sitting in homes and offices, except where certain facilities/users have some need for a high concentration of local processing power and storage under more independent management. Thus a trend in simpler mobile front-end user devices needing less on-board computing power and mass storage.\nAlong with this will develop P2P application platforms evolving from P2P/Decentralized web hosting and again motivated by resilience imperatives, the elimination of commercial client-server service hegemonies (with their increasingly plain pathological social influence), and the increasing community adoption of mesh-like telecommunications (with the decline of corporate telecom), leading to the realization of a virtual cloud computing environment where software and stored data exists online as encrypted entities independent of specific processing hardware distributed across peer networks managed on commons principles. In effect, the entire Internet will begin to function as a collective distributed virtual cloud computer spread across a global network commons of peer processing/storage nodes, increasingly embedded into the municipal telecom infrastructure and where user data environments, web sites, and applications exist as virtually indestructible (inadvertently) perpetually running software independent of any particular host computer.\nMuch more near-term, the dominant concern in computer hardware design will soon become adaptation to imminent plastics moratoriums and resource shortages with the use of alternative materials, the sustainability convention of Repair>Reuse>Repurpose>Recycle, and adaptations to localized independent production through Open Source technology and design as, again, compelled by resilience imperatives as well as part of a growing cultural backlash against corporatism and neoliberal economic exploitation through the emergence of a Global Swadeshi movement. There is an emergent class of goods whose designs are not owned or rather commons, intended for independent local production as a way to insure survival and living standards in times of emergency, but also as an antidote to the pathological dependencies --the ills of consumerism and colonialism-- fostered by the market economy's products. We are seeing people increasingly considering the underlying ethics of the products they choose and use as a function of how and where they are made as well as what they are made out of and how their use impacts society. And so some conscientious people are choosing simpler, lower-tech, less complex products with more open design on ethical grounds, questioning the quality-of-life gains and societal benefits forever promised by the pursuit of the cutting edge and forever new.\nWhat this all means for computer design is more use of Open Source technology without exclusive component supply sources, a return to the 'PC clone' based on generic components and its expansion into the broader range of computing, electronics, and appliances, more use of materials like metal, wood, pressboard, and ceramics replacing plastics, and simpler, perhaps somewhat bulkier, designs favoring mechanical assembly intended to facilitate smaller scale lower-tech production, much easier repair, much easier recycling, and a greater basic durability for a longer use-life with greater return on resource investment. No more blobjects!\nThe Post-Industrial future is a place where most goods are made on-demand, near where you live if not in your own home, using designs globally distributed online, eliminating the wastes of speculative production and the long-distance transport of elaborately packaged bulky fragile finished goods. To facilitate this paradigm, most goods will need to be redesigned to accommodate this mode of production and the factoring out of production methods needing excessive facility scales, heavily polluting industrial processes, and vast pools of capital investment. And society itself will need to become more industrially and agriculturally literate, ending the pathology of social Taylorism and the dependencies it fosters. More people will need to know how to make, grow, and repair more things for themselves and their neighbors. This is not too difficult for most goods defining our standard-of-living which are, already, predominantly produced in job shops rather than the old fashioned factories of the past. But it will be more of a challenge for electronics and computing products with sophisticated production processes and where engineering knowledge must be encoded into the topologies of modular component standards to reduce skill in production and service. (as was the key virtue of the PC design and reason for its revolutionary rate of adoption and improvement)\nBut the disruptions of climate impacts and delayed adaptation may also bring some unusual design trends due to limited availability of certain components. Flat panel displays are particularly subject to geographic supply hegemonies and may be resistant to production localization. And so supply chain disruptions caused by climate impacts may create chronic shortages for these now crucial components, compelling development of more easily fabricated alternatives. This is particularly problematic for mobile devices and we could see more reliance on e-ink displays or the emergence of a new class of sound/voice based mobile computers as a result, as their hardware would be much cheaper and easier to produce everywhere. Basically, mobile computers reduced to displayless hands-free devices the size of the old iPod with a Bluetooth headset and perhaps a subvocal speech collar as a user interface. This could lead to the advent of hands-free computing and a kind of digital telepathy where instant messaging is replaced by 'party lines' of silent subvocal conversation.",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.5208154320716858
+    },
+    {
+      "seed": 7,
+      "text": "(continues breakdown of the code)\n3. Relating to Real-World Logic\nCoding mirrors logic we use daily: \"If it's raining, take an umbrella. Otherwise, wear sunglasses.\" Replace that with numbers: \"If the number is even, divide by 2. Otherwise, multiply by 3 and add 1.\"\n4. Ignoring Jargon\nTerms like return, str(), or print() can feel alien. Think of these as tools, like a hammer or screwdriver. You don't need to know how they're made, just what they do:\nprint() \u2192 Shows text on screen.\nstr(n) \u2192 Converts a number to text so it can be shown.\n5. Practice + Analogies\nOver time, common structures feel natural. Until then, analogies help: Think of the Collatz code like giving cooking instructions:\n\"If it's a vegetable, chop it in half.\"\n\"If it's a fruit, cut it into quarters and add sugar.\"\nWould it help if I rephrased the code into something more conversational or step-by-step?",
+      "gold": "reaction",
+      "pred": "hot_take",
+      "confidence": 0.4980866611003876
+    },
+    {
+      "seed": 7,
+      "text": "\u201cYou don\u2019t need to bother optimizing the code after you\u2019ve done the basics, because a customer can just buy a faster computer.\u201d\nMaybe he said that sarcastically? In some areas optimization is far less important than robustness, or maintainability, modularity, and expandability. If you're making a small database for a mom and pop shop, that can could have been true 20 years ago. There are cases where optimization doesn't matter that much, because it's the difference between wasting 0.5 sec and 1 second of a customers time.",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.5093898177146912
+    },
+    {
+      "seed": 2024,
+      "text": "Think of electronics without the electronics. Moving electrons from one place to another.\nYou don't need conductive wires to transfer data if light can do it. So future electronics will employ much more fiber optic technology than it does currently.\nQuantum computers are still quite a few years off for a typical household consumer. There are still many barriers to building such a thing. But when perfected, it would easily be over a 1000 times more powerful than today's home computers...",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.5274335741996765
+    },
+    {
+      "seed": 2024,
+      "text": "I forsee an organic implant that connects the Central nerves system into a social media network hybridization between Occulus type hardware and a 5 senses receptive system.\nThe matrix is already here.",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.4676022231578827
+    },
+    {
+      "seed": 2024,
+      "text": "We'll probably move to ARM based components. No more x86 chips like the ones we have today",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.5022081732749939
+    },
+    {
+      "seed": 2024,
+      "text": "The one from 2024 has been published already, IIRC.\nA possible dark horse would be viable CNTFETs, which have far higher electron speeds and a lower Vdd than silicon or 2D materials. Not only could they run at hundreds of GHz for the same power consumption, but they also seem a match made in heaven for ternary logic.\nAs far as I know, the groundwork for 99.9999...% pure semiconducting CNT and laying them symmetrically on a wafer have been achieved in lab settings already, but who knows how long it'll take to get them to commercial viability.",
+      "gold": "analysis",
+      "pred": "hot_take",
+      "confidence": 0.425415575504303
+    },
+    {
+      "seed": 2024,
+      "text": "It's better than the majority of other solutions employed by games.",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.45411980152130127
+    },
+    {
+      "seed": 2024,
+      "text": "I've run thin clients on gig-e ethernet to a computer in the next room...the latency still sucks. I've also used AWS' virtual workstations(VDIs) on REALLY fast, low latency(20ms) networks....it STILL sucks. it sorta works but it's noticeable.",
+      "gold": "analysis",
+      "pred": "hot_take",
+      "confidence": 0.5217931270599365
+    },
+    {
+      "seed": 2024,
+      "text": "The death of wifi, instead we will have satellite internet everywhere on earth.",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.5333578586578369
+    },
+    {
+      "seed": 2024,
+      "text": "Everything's an app these days and that's only going to continue. PCs using the same processor architecture would make it much easier to port over mobile apps. Might be a ways off though- First we'll need to get most important PC programs and games to run on ARM (perhaps box86 and box64 or similar compatibility layers built into ARM desktop operating systems, and maintained by big tech), or else x86 users won't be willing to switch.",
+      "gold": "analysis",
+      "pred": "hot_take",
+      "confidence": 0.5412045121192932
+    },
+    {
+      "seed": 2024,
+      "text": "Computing has been memory bandwidth constrained since the early 1990s. You need to keep your compute fed at all times. The problem is that SRAM doesn\u2019t shrink nearly as much as logic when it comes to improved nodes, so it\u2019s still both expensive and fault-prone.\nThe gains in switching speeds and MMTr/mm from new nodes was always going to end, and the memory bandwidth problem was always going to need to be addressed. Apple\u2019s unified memory architecture and AMD\u2019s X3D cache are different approaches to this.",
+      "gold": "analysis",
+      "pred": "hot_take",
+      "confidence": 0.44310706853866577
+    },
+    {
+      "seed": 2024,
+      "text": "part 2:\nyou wouldn't say \"oh another ford pinto caught on fire, i guess we can't have cars go that fast anymore\". if you don't know the ford pinto had a deadly engineering flaw, where it would easily catch on fire.\nand the power also doesn't matter that much, as we got 9070 xt cards, that pull a lot less power, that come with a 12 pin fire hazard sometimes also melt.\nthere have been 5 sapphire nitro+ 9070 xt cards melt thus far, that we know.\nalso nvidia decided to drive the power of the 5090 very high. they could have had it running a lot lower power with barely any reduced performance as you can see here:\nhttps://www.youtube.com/watch?v=kdjOfKPt51s\n80% power target and you lose like 5% performance.\nand all that a 5090 is, is a BAD gaming architecture (as if nvidia still cared lol... ) at close to the reticle limit at 750 mm2 run at very high power and they put a fire hazard power connector on it just to frick with people.\nand in regards to graphics performance improvements you may be confused about what is actually going on.\nyou see there is A LOT of performance improvements still going on, but you just mostly aren't getting them anymore.\nthe 4090 is about the same size of a die as a 3090 die and the 4090 at 4k is 73% faster.\nyou know what you got at the low end, despite architecture and process node improvements?\nREGRESSION! you got regression. a 3060 12 GB turned into a broken 4060 8 GB.\nthe 3060 is a 272 mm2 die and a 192 bit bus (360 GB/s)at 330 us dollars\nthe 4060 is a 159 mm2 die and has a 128 bit bus (272 GB/s) at 300 us dollars.\nso nvidia sold people a 42% smaller die with a 25% memory bandwidth reduction and charged the same.\nthe POCKETED ALL of the process node and architecture improvements at the low end and even stole 4 GB of memory on top of it.\nand THIS can give you the illusion, that there is stagnation.\nthere is NOT.\nyes process node progression is slowing down, but we also got advanced packaging and other stuff coming along, that may push things more.\nmemory, graphics cards and cpus are all still progressing, the question is just whether or not they will give you that progression or just massively increase prices, or just not sell you anything anymore at all.",
+      "gold": "analysis",
+      "pred": "hot_take",
+      "confidence": 0.4091077446937561
+    },
+    {
+      "seed": 2024,
+      "text": "Ok, fair, maybe im off by 5 years, but still 1.5 decade",
+      "gold": "reaction",
+      "pred": "hot_take",
+      "confidence": 0.4353539049625397
+    },
+    {
+      "seed": 2024,
+      "text": "You can look up IRDS's most recent More Moore roadmap if you're curious. There are significant improvements in compute and efficiency yet to come from CMOS, albeit at a slower pace. Economies of scale, learning by doing, and additional competition will also be important to make high-end nodes much cheaper than they are now.\nMeanwhile, hardware manufacturers are now having to take risks they haven't in decades to advance the industry, so who knows when the beyond-CMOS paradigm will arrive.",
+      "gold": "analysis",
+      "pred": "hot_take",
+      "confidence": 0.5021864771842957
+    },
+    {
+      "seed": 2024,
+      "text": "The last description \ud83d\ude02",
+      "gold": "reaction",
+      "pred": "reaction",
+      "confidence": 0.3932357132434845
+    },
+    {
+      "seed": 2024,
+      "text": "Or Lucy.",
+      "gold": "reaction",
+      "pred": "hot_take",
+      "confidence": 0.39990079402923584
+    },
+    {
+      "seed": 2024,
+      "text": "Asked to leave local gas station for \"tampering\" with that",
+      "gold": "reaction",
+      "pred": "hot_take",
+      "confidence": 0.43639636039733887
+    },
+    {
+      "seed": 2024,
+      "text": "We can already see it happening, on the architecture level, ARM and RISC-V bringing crazy improvements in performance, and power efficiency.\nYou have been lied to xd\nDifferences are tiny\n12NM process node for the first time we\u2019re not going to see an increase in the amount of RAM an average consumer has.\nWut?\nPeople spent like 2 decades on 8 16 32gb",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.4530371129512787
+    },
+    {
+      "seed": 2024,
+      "text": "RPG video game reference?",
+      "gold": "reaction",
+      "pred": "hot_take",
+      "confidence": 0.4233019948005676
+    },
+    {
+      "seed": 2024,
+      "text": "The question specifies \"hardware\" so...\nA cowardly prediction is that current trends will continue. And the current trend is towards less obtrusive hardware.\nSo we'll keep on getting big splashy monitors. But just about everything else will continue to get smaller, more built-in and less noticeable.",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.5226613283157349
+    },
+    {
+      "seed": 2024,
+      "text": "There'd be tricks to make the user experience more streamlined. Could still have something of an extremely barebones OS on your system, basically a glorified web browser, to handle UI stuff on the client side so you're not stuck waiting every time you move your mouse. The server could analyze user activity to determine what you're most likely to try to do next, and start doing those things preemptively so it's ready/has already started as soon as you click. Only thing that wouldn't work well is games and stuff that requires real-time feedback and can't be fudged on the client side.\nHowever, the tech giants running these systems could drastically reduce latency by just putting servers in every city (and not offering their services in places too far for a fast connection). If users are always either within 30km of a server or not allowed to connect, customers will never complain about latency.",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.5315479636192322
+    },
+    {
+      "seed": 2024,
+      "text": "Second button down on the right is usually the mute button on these pumps.",
+      "gold": "reaction",
+      "pred": "hot_take",
+      "confidence": 0.41542062163352966
+    },
+    {
+      "seed": 2024,
+      "text": "And then the home computer hobbyists will still be tinkering away using some form of Linux on bulky personal machines and homeservers to maintain personal control over their own data.",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.5195384621620178
+    },
+    {
+      "seed": 2024,
+      "text": "Well again when people say \"moores law is dead\" that doesn't mean progress is dead.\nBut I mean fundamentally all the anger you see these days is due to the fact that people became conditioned to a rate of increase that is no longer sustainable.",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.5142499208450317
+    },
+    {
+      "seed": 2024,
+      "text": "How incredibly wrong you are. The fastest the internet can go is the speed of light. It already goes that fast. That means it can\u2019t get any faster. All it can do is increase bandwidth and get marginally better routing.",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.5440579652786255
+    },
+    {
+      "seed": 2024,
+      "text": "Might be possible but there always seems to be new processor from Nvidia and lots of demand from normal people. I doubt that will change in the foreseeable future. Unless cloud computing will be exceptionally cheap",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.5260815024375916
+    },
+    {
+      "seed": 2024,
+      "text": "iPhone release announcement was less than ten years after pentium II release, though it wasn\u2019t released until just over ten years later. And that was already the tail end of dennard scaling.",
+      "gold": "analysis",
+      "pred": "hot_take",
+      "confidence": 0.40228408575057983
+    },
+    {
+      "seed": 2024,
+      "text": "In the year 2100 your entire house will be a monitor and your GPU will be the size of a lentil",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.46394670009613037
+    },
+    {
+      "seed": 2024,
+      "text": "Yeah. In 2005 if you had 4GB of RAM you were cool.",
+      "gold": "reaction",
+      "pred": "hot_take",
+      "confidence": 0.45429155230522156
+    },
+    {
+      "seed": 2024,
+      "text": "Besides transistors still shrinking, there are a few big things coming - withing about a decade. Gaafets make stacking the CMOS device vertically practical, which would drastically reduce the horizontal area of a transistor cell.",
+      "gold": "analysis",
+      "pred": "hot_take",
+      "confidence": 0.4510464072227478
+    },
+    {
+      "seed": 2024,
+      "text": "This is terrifying but also very likely to happen.",
+      "gold": "reaction",
+      "pred": "hot_take",
+      "confidence": 0.4419812560081482
+    },
+    {
+      "seed": 2024,
+      "text": "Yeah, it's not optimal",
+      "gold": "reaction",
+      "pred": "reaction",
+      "confidence": 0.39310961961746216
+    },
+    {
+      "seed": 2024,
+      "text": "When I was in, we were taught to do due dilligence optimizing, but also not to waste time chasing perfect optimization. Basically if you were in the 80-90% ballpark of the max performance it was 'good enough'",
+      "gold": "reaction",
+      "pred": "hot_take",
+      "confidence": 0.44246286153793335
+    },
+    {
+      "seed": 2024,
+      "text": "Maybe, I think also he was trying to make us understand how much developer time is worth and if you spend a day cutting 1 second of loading time, no one's going to pay for it.",
+      "gold": "reaction",
+      "pred": "hot_take",
+      "confidence": 0.4891708493232727
+    },
+    {
+      "seed": 2024,
+      "text": "Without getting into details, people have been predicting the \u201cend of progress\u201d in computing advancements for decades, that sort of talk is nothing new, and always turns out to be wrong. Sure, there can be slowdowns as problems get worked out and solutions found, but those slowdowns are always temporary. I may not know exactly what computing will look like in 2035, but I am very confident that whatever CPUs we\u2019re using (or GPUs, or\u2026) will be way more performant than what we have today.\n\u2026 I just am hoping most of that performance won\u2019t be taken up by AI slop.",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.5168030261993408
+    },
+    {
+      "seed": 2024,
+      "text": "But the point is still there, isn't it? The current GPUs use more power than whole computers 15 years ago. Of course you can do a lot more with them. But the gains in efficiency have slowed down.",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.5152199864387512
+    },
+    {
+      "seed": 2024,
+      "text": "Chromebooks are kinda the first step towards this and they've already been a thing for over a decade. They have a proper (albeit barebones) desktop OS, but it basically just serves to host Google's suite of web apps.",
+      "gold": "analysis",
+      "pred": "hot_take",
+      "confidence": 0.4946424663066864
+    },
+    {
+      "seed": 2024,
+      "text": "\u2601\ufe0f",
+      "gold": "hot_take",
+      "pred": "reaction",
+      "confidence": 0.4046982526779175
+    },
+    {
+      "seed": 2024,
+      "text": "Fair, but headwinds slowing progress down isn't the same as it stopping altogether. Yes, I very much agree that we aren't seeing the generational gains that we used to see in the 90s and early 2000s, but we are seeing them. From the 1080 Ti to the 3080 to the 4090, we see a doubling in performance each time. For CPUs, a 9800X3D is going to fare far better than a 1600X.\nNow you've got a 5080 that's 10% faster than a 4080 released over 2 years earlier.\nYes, but this here is showcasing Nvidia acting as it does when it has a defacto-monopoly position, knowing that consumers, in general, will \"take what they're given and like it\", while they focus almost entirely on AI hardware for data centers and others. Nvidia could have sold us a 5080 that had 50% more cores, 50% more VRAM at the same price, and made a healthy margin besides.. they didn't, bc they don't have to. Perhaps next gen in 2027 they'll return to historical norms, if AMD competes hard with RDNA5 (as rumored), and if the AI bubble has burst. Both are possible, we'll have to wait and see obviously to find out.",
+      "gold": "analysis",
+      "pred": "hot_take",
+      "confidence": 0.44610607624053955
+    },
+    {
+      "seed": 2024,
+      "text": "The physical transistor gate size have no decreased. they hit the wall with 28nm and despite how much money Intel pouted into it they failed to actually shrink it. The 14nm ones are actually just 28nm ones split in two in attempt to make it sound like they are smaller.\nDesnity increase has come from layering and other technological implementations rather than physical size shrink since then. Take the now popular backside power delivery everyone wants to happen. If it works, the power delivery will take less space on the transistor layer so you can pack more of transistors of same size in. Thats a density increase.",
+      "gold": "analysis",
+      "pred": "hot_take",
+      "confidence": 0.39511317014694214
+    },
+    {
+      "seed": 2024,
+      "text": "yep. My \"Beefy\" machine i built in 2004 had 1GB of RAM.",
+      "gold": "reaction",
+      "pred": "hot_take",
+      "confidence": 0.4288440942764282
+    },
+    {
+      "seed": 2024,
+      "text": "1000 watt power supplies will become the norm after the next GPU generation or two. We\u2019re basically already there. Gaming PCs pull so much goddamn power nowadays.",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.5309962034225464
+    },
+    {
+      "seed": 2024,
+      "text": "In 10 years we will be right here.\n10 years ago was 2015.\nInternet is the same, phones are the same, PCs and servers are the same.",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.4750712215900421
+    },
+    {
+      "seed": 2024,
+      "text": "Here\u2019s the collatz function from the future:\nIf (n%2==0): ->Promptchatgpt(\u201cwhat is \u201c + str(n) + \u201c divided by 2?\u201d Else: -> Promptchatgpt(\u201cwhat is \u201c + str(n) + \u201c times 3 plus 1?\u201d)",
+      "gold": "reaction",
+      "pred": "hot_take",
+      "confidence": 0.3780420124530792
+    },
+    {
+      "seed": 2024,
+      "text": "Moores law has been dead for at least a decade and even then it lasted a lot longer than anyone expected it to. Moore himself said it will stop being applicable in 1986.",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.4199824333190918
+    },
+    {
+      "seed": 2024,
+      "text": "I'm inclined to agree with the thin client notion others have expressed here, but in a somewhat different context. I foresee a long-term trend of virtualization in computing driven by the trend toward a Fourth Industrial Revolution accelerated by resilience imperatives compelled by climate impacts and the imperative to greater sustainability through the elimination of speculative production. And so I foresee the emergence of freely scalable, modular, dynamic gate array processing devices tracing their lineage back to Field Programmable Gate Arrays and the 'reconfigurable computing' based on them used for science applications and now being realized in so-called 'neuromorphic' and 'memristor' devices. Having properties of processors and memory together, the performance of these devices will be a function of array scales and the parallelism they allow rather than a competition of clock speeds. The premise behind the adoption of such devices will be the cultivation of supply chain resilience through increasingly ubiquitous and local production capability for these broadly multipurpose, lower tolerance, lower speed, lower power yet still high performance devices, eliminating the geographic and corporate production hegemonies of conventional microprocessors that will become an increasing liability as climate impacts worsen. The result will be a class of freely scalable computers with largely generic hardware and flexible architectures that exist in software. These, in turn, will increasingly merge functionality with communications hardware based on the same technology leading to a progressive merging of processing and communications infrastructure.\nPut simply, we are looking at computers of much simpler, more generic hardware design using a smaller diversity of more multipurpose, ubiquitously produced, components as their architectures are virtualized as software. And with time these will increasingly become unseen parts of municipal communications infrastructure instead of sitting in homes and offices, except where certain facilities/users have some need for a high concentration of local processing power and storage under more independent management. Thus a trend in simpler mobile front-end user devices needing less on-board computing power and mass storage.\nAlong with this will develop P2P application platforms evolving from P2P/Decentralized web hosting and again motivated by resilience imperatives, the elimination of commercial client-server service hegemonies (with their increasingly plain pathological social influence), and the increasing community adoption of mesh-like telecommunications (with the decline of corporate telecom), leading to the realization of a virtual cloud computing environment where software and stored data exists online as encrypted entities independent of specific processing hardware distributed across peer networks managed on commons principles. In effect, the entire Internet will begin to function as a collective distributed virtual cloud computer spread across a global network commons of peer processing/storage nodes, increasingly embedded into the municipal telecom infrastructure and where user data environments, web sites, and applications exist as virtually indestructible (inadvertently) perpetually running software independent of any particular host computer.\nMuch more near-term, the dominant concern in computer hardware design will soon become adaptation to imminent plastics moratoriums and resource shortages with the use of alternative materials, the sustainability convention of Repair>Reuse>Repurpose>Recycle, and adaptations to localized independent production through Open Source technology and design as, again, compelled by resilience imperatives as well as part of a growing cultural backlash against corporatism and neoliberal economic exploitation through the emergence of a Global Swadeshi movement. There is an emergent class of goods whose designs are not owned or rather commons, intended for independent local production as a way to insure survival and living standards in times of emergency, but also as an antidote to the pathological dependencies --the ills of consumerism and colonialism-- fostered by the market economy's products. We are seeing people increasingly considering the underlying ethics of the products they choose and use as a function of how and where they are made as well as what they are made out of and how their use impacts society. And so some conscientious people are choosing simpler, lower-tech, less complex products with more open design on ethical grounds, questioning the quality-of-life gains and societal benefits forever promised by the pursuit of the cutting edge and forever new.\nWhat this all means for computer design is more use of Open Source technology without exclusive component supply sources, a return to the 'PC clone' based on generic components and its expansion into the broader range of computing, electronics, and appliances, more use of materials like metal, wood, pressboard, and ceramics replacing plastics, and simpler, perhaps somewhat bulkier, designs favoring mechanical assembly intended to facilitate smaller scale lower-tech production, much easier repair, much easier recycling, and a greater basic durability for a longer use-life with greater return on resource investment. No more blobjects!\nThe Post-Industrial future is a place where most goods are made on-demand, near where you live if not in your own home, using designs globally distributed online, eliminating the wastes of speculative production and the long-distance transport of elaborately packaged bulky fragile finished goods. To facilitate this paradigm, most goods will need to be redesigned to accommodate this mode of production and the factoring out of production methods needing excessive facility scales, heavily polluting industrial processes, and vast pools of capital investment. And society itself will need to become more industrially and agriculturally literate, ending the pathology of social Taylorism and the dependencies it fosters. More people will need to know how to make, grow, and repair more things for themselves and their neighbors. This is not too difficult for most goods defining our standard-of-living which are, already, predominantly produced in job shops rather than the old fashioned factories of the past. But it will be more of a challenge for electronics and computing products with sophisticated production processes and where engineering knowledge must be encoded into the topologies of modular component standards to reduce skill in production and service. (as was the key virtue of the PC design and reason for its revolutionary rate of adoption and improvement)\nBut the disruptions of climate impacts and delayed adaptation may also bring some unusual design trends due to limited availability of certain components. Flat panel displays are particularly subject to geographic supply hegemonies and may be resistant to production localization. And so supply chain disruptions caused by climate impacts may create chronic shortages for these now crucial components, compelling development of more easily fabricated alternatives. This is particularly problematic for mobile devices and we could see more reliance on e-ink displays or the emergence of a new class of sound/voice based mobile computers as a result, as their hardware would be much cheaper and easier to produce everywhere. Basically, mobile computers reduced to displayless hands-free devices the size of the old iPod with a Bluetooth headset and perhaps a subvocal speech collar as a user interface. This could lead to the advent of hands-free computing and a kind of digital telepathy where instant messaging is replaced by 'party lines' of silent subvocal conversation.",
+      "gold": "hot_take",
+      "pred": "hot_take",
+      "confidence": 0.5215262770652771
+    }
+  ]
+}
